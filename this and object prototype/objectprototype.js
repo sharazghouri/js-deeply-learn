@@ -1,3 +1,29 @@
+
+//#1 setting property
+/*var anotherObject = {
+ a: 2
+ };
+
+
+ // create an object linked to `anotherObject`
+ var myObject = {
+ a: 3
+ };
+
+ console.log( myObject.a );
+ myObject = Object.create( anotherObject );
+ myObject.a = 5;
+ myObject.__prot__ ; //{ a : 2}
+ console.log( myObject.a );//5
+
+ for (var k in myObject) {
+ console.log("found: " + k);
+ }*/
+
+
+
+//#2 writable property false not creating propety in child ( means myObj will ignore)
+/*
 var anotherObject = {
     ab: 2
 };
@@ -14,11 +40,66 @@ var myObject = {
 console.log( myObject.a );
  myObject = Object.create( anotherObject );
  myObject.a = 5;
-console.log( myObject.a );
+console.log( myObject.a );//42
 
 for (var k in myObject) {
     console.log("found: " + k);
 }
-// found: a
+// found: a*/
 
-("a" in myObject); // true
+
+
+// #3 setter function use for object
+/*
+var anotherObject = {
+    a: 2,
+    get a(){
+      return this._a_;
+    },
+    set a(val) {
+        this._a_ = val *3;
+    }
+};
+
+
+// create an object linked to `anotherObject`
+var myObject = {
+    a: 3,
+
+};
+
+console.log( myObject.a ); //3
+myObject = Object.create( anotherObject );
+myObject.a= 5;
+myObject.__proto__ ; //{ a : 2}
+console.log( myObject. a );//15
+
+for (var k in myObject) {
+    console.log("found: " + k);
+}*/
+
+// Implicitly shadowing
+
+
+var anotherObject = {
+   a:2
+};
+
+var  myObject = Object.create( anotherObject );
+
+console.log( anotherObject.a ); //2
+console.log( myObject.a );//2
+
+anotherObject.hasOwnProperty( 'a' ); // true
+myObject.hasOwnProperty( 'a' ); //false
+
+myObject.a++; // Oops Implicitly shadowing  a = a+1;
+
+console.log( anotherObject.a ); //2
+console.log( myObject.a );//3
+
+anotherObject.hasOwnProperty( 'a' ); // true
+myObject.hasOwnProperty( 'a' ); //true
+
+
+
