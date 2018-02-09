@@ -80,6 +80,7 @@ for (var k in myObject) {
 
 // Implicitly shadowing
 
+/*
 
 var anotherObject = {
    a:2
@@ -100,6 +101,23 @@ console.log( myObject.a );//3
 
 anotherObject.hasOwnProperty( 'a' ); // true
 myObject.hasOwnProperty( 'a' ); //true
+
+*/
+
+//Class Function
+
+function  Foo() {
+
+}
+//Foo.prototype;
+var a = new Foo();
+
+// we can do in with hero  Object.create();
+
+Object.getPrototypeOf( a ) === Foo.prototype; // true
+console.log( Object.getPrototypeOf( a ) === Foo.prototype );
+
+
 
 
 
