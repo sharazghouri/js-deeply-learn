@@ -134,14 +134,36 @@ a.constructor == Foo;
 */
 
 //Conststuctor call of function
-function NothingSpecial() {
+/*function NothingSpecial() {
     console.log( "Don't mind me!" );
 }
 
 var a = new NothingSpecial();
 // "Don't mind me!"
 
-a; // {}
+a; // {}*/
+
+
+//Mechnicas
+
+function  Foo( name ) {
+    this.name = name;
+    console.log( 'a');
+}
+
+
+Foo.prototype.myName = function () {
+
+    return this.name;
+};
+
+var a = new Foo( 'a' );
+var b =  new Foo( 'b' );
+
+console.log( a.myName() );
+console.log( b.myName() );
+
+
 
 
 
