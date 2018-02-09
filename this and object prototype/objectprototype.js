@@ -1,6 +1,7 @@
 
 //#1 setting property
-/*var anotherObject = {
+/*
+var anotherObject = {
  a: 2
  };
 
@@ -18,7 +19,8 @@
 
  for (var k in myObject) {
  console.log("found: " + k);
- }*/
+ }
+*/
 
 
 
@@ -106,6 +108,7 @@ myObject.hasOwnProperty( 'a' ); //true
 
 //Class Function
 
+/*
 function  Foo() {
 
 }
@@ -116,7 +119,29 @@ var a = new Foo();
 
 Object.getPrototypeOf( a ) === Foo.prototype; // true
 console.log( Object.getPrototypeOf( a ) === Foo.prototype );
+*/
 
+
+//Constructor
+
+/*
+function Foo(){
+
+};
+Foo.prototype.constructor;
+var a = new Foo();
+a.constructor == Foo;
+*/
+
+//Conststuctor call of function
+function NothingSpecial() {
+    console.log( "Don't mind me!" );
+}
+
+var a = new NothingSpecial();
+// "Don't mind me!"
+
+a; // {}
 
 
 
