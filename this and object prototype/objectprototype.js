@@ -146,6 +146,7 @@ a; // {}*/
 
 //Mechnicas
 
+/*
 function  Foo( name ) {
     this.name = name;
     console.log( 'a');
@@ -162,7 +163,39 @@ var b =  new Foo( 'b' );
 
 console.log( a.myName() );
 console.log( b.myName() );
+*/
+// prototype inheritance
 
+function  Foo( name ) {
+
+    this.name = name;
+
+}
+
+Foo.prototype.myName = function ( ) {
+    
+    return this.name;
+}
+
+function  Bar( name , label ) {
+    Foo.call( this , name  );
+    this.label = label;
+}
+
+// Bar Constructor gone if you rely on Bar constructor manually fix the issue
+Bar.prototype = Object.create( Foo );
+
+Bar.prototype.myLabel= function () {
+    return this.label;
+};
+
+var a = new Bar( 'a', 'Obja' );
+
+console.log( a.myName() );
+/*
+Same as a.myMyname this will work if we create object with direct Foo object with( myName() exist in Foo.prototype );
+console.log( a.name );*/
+console.log( a.myLabel() );
 
 
 
