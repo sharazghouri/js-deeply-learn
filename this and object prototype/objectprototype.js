@@ -203,7 +203,9 @@ function  foo1() {
 var bar = Object.create( foo );
 bar.something();
 */
+//Object Create
 
+/*
 var anotherObj = {
   a:1
 };
@@ -232,3 +234,19 @@ console.log( myObj.hasOwnProperty( 'c' ) ); //false
 console.log( myObj.a ); //1
 console.log( myObj.b ); //2
 console.log( myObj.c ); //3
+*/
+
+//Internal Delegation
+var anotherObject = {
+    cool: function() {
+        console.log( "cool!" );
+    }
+};
+
+var myObject = Object.create( anotherObject );
+
+myObject.doCool = function() {
+    this.cool(); // internal delegation!
+};
+
+myObject.doCool(); // "cool!"
