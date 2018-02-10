@@ -165,6 +165,7 @@ console.log( a.myName() );
 console.log( b.myName() );
 */
 // prototype inheritance
+/*
 
 function  Foo( name ) {
 
@@ -192,12 +193,25 @@ Bar.prototype.myLabel= function () {
 var a = new Bar( 'a', 'Obja' );
 
 console.log( a.myName() );
-/*
+/!*
 Same as a.myMyname this will work if we create object with direct Foo object with( myName() exist in Foo.prototype );
-console.log( a.name );*/
+console.log( a.name );*!/
 console.log( a.myLabel() );
 
+*/
+// Inspecting Calss relation ship
 
+function  isRealated( o1 ,o2 ) {
 
+    function  Foo() {
+    }
 
+    Foo.prototype = o2;
+    return o1 instanceof  Foo;
+}
+
+var a = {};
+var b =Object.create( a );
+
+console.log( isRealated( b , a ) );
 
