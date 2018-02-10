@@ -146,6 +146,7 @@ a; // {}*/
 
 //Mechnicas
 
+/*
 function  Foo( name ) {
     this.name = name;
     console.log( 'a');
@@ -162,9 +163,72 @@ var b =  new Foo( 'b' );
 
 console.log( a.myName() );
 console.log( b.myName() );
+*/
+
+//"Constructor" Redux
+
+
+/*
+
+function  Foo( name ) {
+    this.name = name;
+    console.log( 'a');
+}
+
+Foo.prototype = {};
+
+var a = new Foo( 'a' );
+//var a = Object.create( Foo );
+console.log( a.constructor === Foo ); // true
+console.log( a.constructor === Object ); // false
+
+*/
 
 
 
+/*
+var foo = {
+
+    something: function() {
+
+        console.log( " Tell me some thing good");
+    }
+};
+
+function  foo1() {
 
 
+}
 
+var bar = Object.create( foo );
+bar.something();
+*/
+
+var anotherObj = {
+  a:1
+};
+var myObj = Object.create( anotherObj ,{
+b:{
+    enumerable: false,
+        writable: true,
+    configurable: false,
+    value: 3
+},
+c: {
+    enumerable: true,
+        writable: false,
+        configurable: false,
+        value: 4
+
+}
+}
+);
+
+
+console.log( myObj.hasOwnProperty( 'a' ) ); //true
+console.log( myObj.hasOwnProperty( 'b' ) ); //false
+console.log( myObj.hasOwnProperty( 'c' ) ); //false
+
+console.log( myObj.a ); //1
+console.log( myObj.b ); //2
+console.log( myObj.c ); //3

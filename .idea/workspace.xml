@@ -58,8 +58,8 @@
       <file leaf-file-name="objectprototype.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/this and object prototype/objectprototype.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="233" column="27" lean-forward="true" selection-start-line="233" selection-start-column="27" selection-end-line="233" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -335,7 +335,7 @@
       <workItem from="1517671315515" duration="1740000" />
       <workItem from="1517714438250" duration="3433000" />
       <workItem from="1517823578412" duration="5009000" />
-      <workItem from="1517973162746" duration="16971000" />
+      <workItem from="1517973162746" duration="21341000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -372,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518193630411</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mehnicas of Function who add porperty in using prototype">
+      <created>1518219603006</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518219603006</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67211000" />
+    <option name="totallyTimeSpent" value="71581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -389,7 +396,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33224222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33224222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -414,7 +421,8 @@
     <MESSAGE value="Class Function with Prototyoe __proto__" />
     <MESSAGE value="constructor call of object" />
     <MESSAGE value="Mehnicas of Function who add porperty in using prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mehnicas of Function who add porperty in using prototype" />
+    <MESSAGE value="Object.create function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Object.create function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -788,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/this and object prototype/objectprototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        <state relative-caret-position="349">
+          <caret line="233" column="27" lean-forward="true" selection-start-line="233" selection-start-column="27" selection-end-line="233" selection-end-column="27" />
           <folding />
         </state>
       </provider>
