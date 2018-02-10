@@ -201,6 +201,7 @@ console.log( a.myLabel() );
 */
 // Inspecting Calss relation ship
 
+/*
 function  isRealated( o1 ,o2 ) {
 
     function  Foo() {
@@ -214,4 +215,21 @@ var a = {};
 var b =Object.create( a );
 
 console.log( isRealated( b , a ) );
+*/
+/*
 
+// Simply: does `b` appear anywhere in
+// `c`s [[Prototype]] chain?
+b.isPrototypeOf( c );
+Object.getPrototypeOf( a ) === Foo.prototype; // true*/
+
+Object.defineProperty( Object.prototype, "__proto__", {
+    get: function() {
+        return Object.getPrototypeOf( this );
+    },
+    set: function(o) {
+        // setPrototypeOf(..) as of ES6
+        Object.setPrototypeOf( this, o );
+        return o;
+    }
+} );

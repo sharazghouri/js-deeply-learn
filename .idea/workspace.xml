@@ -57,8 +57,8 @@
       <file leaf-file-name="objectprototype.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/this and object prototype/objectprototype.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+            <state relative-caret-position="662">
+              <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="234" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -271,7 +271,7 @@
       <workItem from="1517714438250" duration="3433000" />
       <workItem from="1517823578412" duration="5009000" />
       <workItem from="1517973162746" duration="16971000" />
-      <workItem from="1518237215069" duration="10583000" />
+      <workItem from="1518237215069" duration="12048000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -315,11 +315,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518258655422</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Inspecting &quot;Class&quot; Relationships">
+      <created>1518263212288</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518263212288</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77794000" />
+    <option name="totallyTimeSpent" value="79259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
@@ -358,7 +365,8 @@
     <MESSAGE value="constructor call of object" />
     <MESSAGE value="Mehnicas of Function who add porperty in using prototype" />
     <MESSAGE value="(Prototypal) Inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="(Prototypal) Inheritance" />
+    <MESSAGE value="Inspecting &quot;Class&quot; Relationships" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inspecting &quot;Class&quot; Relationships" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -732,8 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/this and object prototype/objectprototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state relative-caret-position="662">
+          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="234" selection-end-column="4" />
           <folding />
         </state>
       </provider>
