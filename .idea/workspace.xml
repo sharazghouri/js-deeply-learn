@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b17b414f-0e75-452a-9ae3-96dd4c50b9b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/this and object prototype/delegation.js" afterPath="$PROJECT_DIR$/this and object prototype/delegation.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="delegation.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/this and object prototype/delegation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="27" />
+            <state relative-caret-position="442">
+              <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -338,7 +337,7 @@
       <workItem from="1517823578412" duration="5009000" />
       <workItem from="1517973162746" duration="16971000" />
       <workItem from="1518320091851" duration="111000" />
-      <workItem from="1518442897739" duration="3259000" />
+      <workItem from="1518442897739" duration="4818000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -389,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518443341649</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Mental Model Compared OOP">
+      <created>1518449834412</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518449834412</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71313000" />
+    <option name="totallyTimeSpent" value="72872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -433,7 +439,8 @@
     <MESSAGE value="Mehnicas of Function who add porperty in using prototype" />
     <MESSAGE value="Internal Delegation" />
     <MESSAGE value="Delegation Theory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delegation Theory" />
+    <MESSAGE value="Mental Model Compared OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mental Model Compared OOP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -807,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/this and object prototype/delegation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="27" />
+        <state relative-caret-position="442">
+          <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="29" />
           <folding />
         </state>
       </provider>
