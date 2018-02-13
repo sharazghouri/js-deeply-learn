@@ -75,8 +75,9 @@ var b1 = new Bar( 'b1' );
 var b2 = new Bar( 'b2' );
 b1.speak();
 b2.speak();
-*/
+
 //Mental Model Compared OL-OO
+/*
 var Foo = {
     init: function(who) {
         this.me = who;
@@ -100,3 +101,40 @@ b2.init( "b2" );
 b1.speak();
 b2.speak();
 
+*/
+
+
+/*var Foo = {
+    bar(){ },
+    baz: function baz() {
+
+    }
+
+};
+var Foo = {
+    bar: function () {
+
+    },
+    baz: function baz() {
+
+    }
+
+};*/
+
+var Foo ={
+
+    bar : function ( x ) {
+        if( x < 10 ){
+            Foo.bar( x * 2  );
+        }
+
+        return x;
+    },
+    baz : function baz( x ) {
+        if( x < 10 ){
+            baz( x * 2  );
+        }
+
+        return x;
+    }
+};
