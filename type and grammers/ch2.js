@@ -29,9 +29,27 @@ var a = 2 /'foo';
 typeof  a  === "number";
 */
 
+/*
 var a = 2 / "foo"; // NaN
 
  console.log(  a == NaN ) ;	// false
  console.log(  a === NaN ) ;	// false
 
-isNaN( a ); //true
+console.log( isNaN( a ) ); // true
+*/
+
+//Zero magic
+console.log( 1 / 0 );  // Positive Infinity
+console.log( -1 / 0 );//  Negative Infinity
+
+var a = 0 / -3; // -0
+var b = 0 * -3; // -0
+
+function isNegZero(n) {
+    n = Number( n );
+    return (n === 0) && (1 / n === -Infinity);
+}
+
+isNegZero( -0 );		// true
+isNegZero( 0 / -3 );	// true
+isNegZero( 0 );			// false
