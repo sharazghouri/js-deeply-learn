@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17b414f-0e75-452a-9ae3-96dd4c50b9b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/type and grammers/ch2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/type and grammers/ch2.js" afterPath="$PROJECT_DIR$/type and grammers/ch2.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +38,8 @@
       <file leaf-file-name="ch2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/type and grammers/ch2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -306,7 +305,7 @@
       <workItem from="1517973162746" duration="16971000" />
       <workItem from="1518320091851" duration="111000" />
       <workItem from="1518442897739" duration="5371000" />
-      <workItem from="1518495004154" duration="4006000" />
+      <workItem from="1518495004154" duration="4753000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -378,11 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518496223777</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Don't relay on floating point number">
+      <created>1518577064446</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518577064477</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77431000" />
+    <option name="totallyTimeSpent" value="78178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -425,7 +431,8 @@
     <MESSAGE value="Mental Model Compared OOP" />
     <MESSAGE value="Mental Model Compared OL-OO" />
     <MESSAGE value="Nicer Syntax" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nicer Syntax" />
+    <MESSAGE value="Don't relay on floating point number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Don't relay on floating point number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -800,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/type and grammers/ch2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>
