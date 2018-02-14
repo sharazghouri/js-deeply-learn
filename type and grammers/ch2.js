@@ -16,7 +16,21 @@ console.log( 0.1 + 0.2 === 0.3 ); // false
 Foo();*/
 
 // Vlid use to return undefiend  as result of expersion
+/*
 var hag = 23;
 console.log( hag,   hag);
 console.log( hag,  void hag);
+*/
+
+// Magic With Numbers
+/*
+
+var a = 2 /'foo';
+typeof  a  === "number";
+*/
+
+var a = 2 / "foo";
+
+ console.log(  a == NaN ) ;	// false
+ console.log(  a === NaN ) ;	// false
 
