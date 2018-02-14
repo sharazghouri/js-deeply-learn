@@ -58,7 +58,7 @@ isNegZero( 0 );			// false
 
 // Reference  VS Copy
 
-var a = 4 ;
+ /*var a = 4 ;
  var b = a; // b is copy of a
  b++;
  console.log( a ,b ); // 4 ,5
@@ -68,3 +68,13 @@ var d = c;     // d is refernce of c
 d.push( 5 );
 console.log( c ); // [1,2,3]
 console.log( d );//[1,2,3]
+*/
+
+ function foo( c ) {
+     c = c + 1;
+     console.log( c );
+ }
+ var a = 4;
+ var b = new Number( a );
+ foo( b );
+ console.log( b );

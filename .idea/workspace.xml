@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b17b414f-0e75-452a-9ae3-96dd4c50b9b0" name="Default" comment="Zero Magic">
+    <list default="true" id="b17b414f-0e75-452a-9ae3-96dd4c50b9b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/type and grammers/ch2.js" afterPath="$PROJECT_DIR$/type and grammers/ch2.js" />
     </list>
@@ -38,8 +38,8 @@
       <file leaf-file-name="ch2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/type and grammers/ch2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+            <state relative-caret-position="365">
+              <caret line="70" column="2" lean-forward="true" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -310,7 +310,7 @@
       <workItem from="1518442897739" duration="5371000" />
       <workItem from="1518495004154" duration="6578000" />
       <workItem from="1518580663120" duration="484000" />
-      <workItem from="1518616153487" duration="1409000" />
+      <workItem from="1518616153487" duration="3081000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -410,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518579993933</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Copy vs Reference of Value in js">
+      <created>1518618398745</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1518618398745</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81896000" />
+    <option name="totallyTimeSpent" value="83568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -462,7 +469,8 @@
     <MESSAGE value="Void Can be use to return undefiend as result of expression" />
     <MESSAGE value="NaN is a very special value in that it's never equal to another NaN value (i.e., it's never equal to itself)" />
     <MESSAGE value="Zero Magic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zero Magic" />
+    <MESSAGE value="Copy vs Reference of Value in js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Copy vs Reference of Value in js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -836,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/type and grammers/ch2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        <state relative-caret-position="365">
+          <caret line="70" column="2" lean-forward="true" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
           <folding />
         </state>
       </provider>
