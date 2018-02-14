@@ -29,8 +29,9 @@ var a = 2 /'foo';
 typeof  a  === "number";
 */
 
-var a = 2 / "foo";
+var a = 2 / "foo"; // NaN
 
  console.log(  a == NaN ) ;	// false
  console.log(  a === NaN ) ;	// false
 
+isNaN( a ); //true
