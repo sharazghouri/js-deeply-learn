@@ -39,6 +39,7 @@ console.log( isNaN( a ) ); // true
 */
 
 //Zero magic
+/*
 console.log( 1 / 0 );  // Positive Infinity
 console.log( -1 / 0 );//  Negative Infinity
 
@@ -53,3 +54,17 @@ function isNegZero(n) {
 isNegZero( -0 );		// true
 isNegZero( 0 / -3 );	// true
 isNegZero( 0 );			// false
+*/
+
+// Reference  VS Copy
+
+var a = 4 ;
+ var b = a; // b is copy of a
+ b++;
+ console.log( a ,b ); // 4 ,5
+
+var c = [1,2,3];
+var d = c;     // d is refernce of c
+d.push( 5 );
+console.log( c ); // [1,2,3]
+console.log( d );//[1,2,3]
