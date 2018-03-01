@@ -46,30 +46,51 @@ a.toJSON= function () {
 };
 console.log( JSON.stringify( a ) );
 */
+
+//Second argument of the function
+
+/*
+var a ={
+    b: 42,
+    c: '42',
+    d:[ 1,2,3 ]
+};
+
+console.log( JSON.stringify( a,[ "b", "c" ] ) ); //{"b":42,"c":"42"}
+  var result = JSON.stringify(a, function (k , v) {
+    if( k !== "c" ){
+     return v;
+    }
+});
+console.log( result );
+*/
+//Thrid parameter for the indedenation
+
 var a = {
-    val: [1,2,3],
-
-    // probably correct!
-    toJSON: function(){
-        return this.val.slice( 1 );
-    }
+    b: 42,
+    c: "42",
+    d: [1,2,3]
 };
-var b = {
-    val: [1,2,3],
-
-    // probably inorrect!
-    toJSON: function(){
-        return "["+ this.val.slice( 1 ).join() +"]";
-    }
-};
-//correct
-console.log( JSON.stringify( a ));//[2,3]
-//incorrect
- console.log( JSON.stringify( b ));//"[2,3]"
-
-
-
-
+console.log( JSON.stringify(a,null,3) );
+// {
+//     "b": 42,
+//     "c": "42",
+//     "d": [
+//     1,
+//     2,
+//     3
+// ]
+// }
+console.log( JSON.stringify(a,null,'---') );
+// {
+//     ---"b": 42,
+//     ---"c": "42",
+//     ---"d": [
+//     ------1,
+//     ------2,
+//     ------3
+//     ---]
+// }
 
 
 
