@@ -64,7 +64,8 @@ console.log( JSON.stringify( a,[ "b", "c" ] ) ); //{"b":42,"c":"42"}
 });
 console.log( result );
 */
-//Thrid parameter for the indedenation
+//Third parameter for the indedenation in JSON.Stringify();
+/*
 
 var a = {
     b: 42,
@@ -93,5 +94,28 @@ console.log( JSON.stringify(a,null,'---') );
 // }
 
 
+*/
+//TONumber
 
+var a ={
+    valueOf:function () {
+        return '42';
+    }
+};
+var b ={
+  toString:function () {
+      return '42';
+  }
+};
+var c=[ 4, 2];
+c.toString= function () {
+    return this.join('');
+};
+
+console.log( Number(a) );//42
+console.log( Number(b) );//42
+console.log( Number(c) );//42
+console.log( Number("") );//0
+console.log( Number([]) );//0
+console.log( Number(["abc"]) );//Nan
 
