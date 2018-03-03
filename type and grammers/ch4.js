@@ -142,10 +142,17 @@ var d = Boolean( a && b && c);
 */
 
 //Truth value
-var a = new Boolean( 'false' );
+/*var a = new Boolean( 'false' );
 var b = new Number( '0' );
 var c = new String( "''" );
 
+var d = Boolean( a && b && c);
+console.log( d );*/
+//Other Truthy
+
+var a =[];
+var b ={};
+var c =function () {};
 var d = Boolean( a && b && c);
 console.log( d );
 
