@@ -95,8 +95,8 @@ console.log( JSON.stringify(a,null,'---') );
 
 
 */
-//TONumber
-
+//Number : if you want to convert in Number two function valueOf or toString Use
+/*
 var a ={
     valueOf:function () {
         return '42';
@@ -118,4 +118,34 @@ console.log( Number(c) );//42
 console.log( Number("") );//0
 console.log( Number([]) );//0
 console.log( Number(["abc"]) );//Nan
+
+*/
+
+//Boolean
+/*
+From that table, we get the following as the so-called "falsy" values list:
+
+ undefined
+null
+false
++0, -0, and NaN
+""*/
+
+
+//FALSY VALUE
+/*
+var a = new Boolean( false );
+var b = new Number( 0 );
+var c = new String( '' );
+
+var d = Boolean( a && b && c);
+*/
+
+//Truth value
+var a = new Boolean( 'false' );
+var b = new Number( '0' );
+var c = new String( "''" );
+
+var d = Boolean( a && b && c);
+console.log( d );
 

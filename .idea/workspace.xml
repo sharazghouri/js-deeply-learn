@@ -37,8 +37,8 @@
       <file leaf-file-name="ch4.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/type and grammers/ch4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="696">
+              <caret line="149" column="17" lean-forward="false" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -267,7 +267,7 @@
       <workItem from="1519875446097" duration="2456000" />
       <workItem from="1519901373539" duration="1771000" />
       <workItem from="1519964437517" duration="2167000" />
-      <workItem from="1520073445151" duration="136000" />
+      <workItem from="1520073445151" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -388,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519234247066</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Falsy value object">
+      <created>1520073626661</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1520073626661</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110682000" />
+    <option name="totallyTimeSpent" value="110786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -443,7 +450,8 @@
     <MESSAGE value="Copy vs Reference of Value in js" />
     <MESSAGE value="&#10;scalar Primitive Object pass by value" />
     <MESSAGE value="Object Wrapper Gotchas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Object Wrapper Gotchas" />
+    <MESSAGE value="Falsy value object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Falsy value object" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -801,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/type and grammers/ch4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="696">
+          <caret line="149" column="17" lean-forward="false" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
           <folding />
         </state>
       </provider>
