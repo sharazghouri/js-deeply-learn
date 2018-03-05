@@ -149,10 +149,15 @@ var c = new String( "''" );
 var d = Boolean( a && b && c);
 console.log( d );*/
 //Other Truthy
+/*
 
 var a =[];
 var b ={};
 var c =function () {};
 var d = Boolean( a && b && c);
 console.log( d );
+*/
 
+//Date To number
+var d = new Date( "Mon, 18 Aug 2014 08:53:06 CDT" );
+console.log( +d );
