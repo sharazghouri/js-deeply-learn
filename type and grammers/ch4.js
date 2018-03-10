@@ -159,5 +159,49 @@ console.log( d );
 */
 
 //Date To number
+/*
 var d = new Date( "Mon, 18 Aug 2014 08:53:06 CDT" );
 console.log( +d );
+*/
+// index of as bollean check of presence/absence
+/*var a ="Hello word";
+if( a.indexOf( 'lo') > 0){
+    //found
+    console.log( "a.indexOf( 'lo') > 0",a.indexOf( 'lo') );
+}
+
+if ( a.indexOf('lo') != -1 ){
+    //found
+    console.log( "a.indexOf('lo') != -1", a.indexOf('lo') );
+}
+if ( a.indexOf('lo') < 0 ){
+    //not found
+    console.log( "a.indexOf('lo') < 0", a.indexOf('lo') );
+}
+if ( a.indexOf('lo') < 0== -1 ){
+    //not found
+    console.log( "a.indexOf('lo') == ", a.indexOf('lo') );
+}*/
+/////////////////////////////////////////////////
+
+//~ = -(  x + 1 );
+/*
+var a = "Hello index";
+console.log( ~ a.indexOf( "lo") ,'truthy value'); //-4 ->truthy value
+
+if (  ~ a.indexOf( "lo") ){
+    console.log( "Found in it" );
+}
+
+console.log( ~ a.indexOf( "ol") ,'falsy value'); //-0 ->truthy value
+console.log( ! ~ a.indexOf( "ol") ,'convert to truhty  value'); //-1 ->truthy valeC
+
+if( ! ~ a.indexOf( "ol") ){
+
+    console.log( "NOt found");
+}
+
+*/
+//Math floor with ~~
+console.log( "Math Floor -49.6", Math.floor( -49.6) );
+console.log( "~~ -49.6",  ~~-49.6 );
