@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b17b414f-0e75-452a-9ae3-96dd4c50b9b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/type and grammers/ch4.js" afterPath="$PROJECT_DIR$/type and grammers/ch4.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="ch4.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/type and grammers/ch4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -321,7 +322,7 @@
       <workItem from="1520482738688" duration="1030000" />
       <workItem from="1520613259697" duration="2670000" />
       <workItem from="1520650065548" duration="3488000" />
-      <workItem from="1520741584241" duration="600000" />
+      <workItem from="1520741584241" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -456,11 +457,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520653659642</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Tilde sgin advance">
+      <created>1520744464571</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1520744464571</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103816000" />
+    <option name="totallyTimeSpent" value="105481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -513,7 +521,8 @@
     <MESSAGE value="Object Wrapper Gotchas" />
     <MESSAGE value="Date to Number with unary operator" />
     <MESSAGE value="~~ tilde bitwise Operator work" />
-    <option name="LAST_COMMIT_MESSAGE" value="~~ tilde bitwise Operator work" />
+    <MESSAGE value="Tilde sgin advance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilde sgin advance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -878,13 +887,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/type and grammers/ch4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        <state relative-caret-position="254">
+          <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
           <folding />
         </state>
       </provider>

@@ -203,5 +203,16 @@ if( ! ~ a.indexOf( "ol") ){
 
 */
 //Math floor with ~~
+/*
 console.log( "Math Floor -49.6", Math.floor( -49.6) );
-console.log( "~~ -49.6",  ~~-49.6 );
+console.log( "~~ -49.6",  ~~-49.6 );*/
+
+//ParseInt
+
+console.log(parseInt( 1/0, 19 )); // parseInt( "Infinity", 19 ) I character value 19 and n is invalid character
+console.log(parseInt( 0.000008 ));		// 0   ("0" from "0.000008")
+console.log(parseInt( 0.0000008) );		// 8   ("8" from "8e-7")
+console.log(parseInt( false, 16) );		// 250 ("fa" from "false")
+console.log(parseInt( parseInt, 16 ));	// 15  ("f" from "function..")
+console.log(parseInt( "0x10" ));			// 16
+console.log(parseInt( "103", 2 ));       //2
