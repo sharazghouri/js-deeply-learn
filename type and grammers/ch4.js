@@ -279,6 +279,7 @@ var f =[ 3,4];
 console.log( e +f );*/
 
 //String to Number
+/*
 var d = '3';
 var f = 2;
 console.log( d- f);
@@ -287,4 +288,46 @@ var a = [3];
 var b = [1];
 
 console.log( a - b ); // 2
+*/
+//Implicitly Boolean
+
+/*
+var a = 42;
+var b ='abc';
+var c;
+var d = null;
+
+if (a) {
+    console.log( "yep 1" );		// yep
+}
+
+while (c) {
+    console.log( "nope, never runs" );
+}
+
+c = d ? a : b;
+c;					// "abc"
+
+if ((a && d) || c) {
+    console.log( "yep 3" );		// yep
+}*/
+//Logical operator
+/*
+var a = 42;
+var b = 'abc';
+var c = null;
+c || b;		// "abc"
+c && b;		// null
+console.log( a || b);
+
+console.log( a && b);*/
+/*
+function foo() {
+    console.log( a );
+}
+
+var a = 42;
+
+a && foo(); // 42*/
+
 
