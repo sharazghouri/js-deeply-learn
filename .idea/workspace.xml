@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/type and grammers/ch4.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
-              <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+              <caret line="350" column="23" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -326,7 +326,7 @@
       <workItem from="1520650065548" duration="3488000" />
       <workItem from="1520741584241" duration="4256000" />
       <workItem from="1520825194536" duration="3232000" />
-      <workItem from="1520904537526" duration="797000" />
+      <workItem from="1520904537526" duration="1824000" />
     </task>
     <task id="LOCAL-00001" summary="get function parameter length">
       <created>1517887760072</created>
@@ -489,11 +489,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520826756552</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Logical Operator converstion of type implictly">
+      <created>1520910197920</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1520910197920</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111501000" />
+    <option name="totallyTimeSpent" value="112528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -525,7 +532,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get function parameter length" />
     <MESSAGE value="if in higher chain same property writable false then higher propert use  setting shadow ignore if strict mode then getting error" />
     <MESSAGE value="Implicitly property shadowing" />
     <MESSAGE value="Class Function with Prototyoe __proto__" />
@@ -550,7 +556,8 @@
     <MESSAGE value="ParseInt power" />
     <MESSAGE value="Explictilty Boolean coercion" />
     <MESSAGE value="Implicit String Converstion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implicit String Converstion" />
+    <MESSAGE value="Logical Operator converstion of type implictly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logical Operator converstion of type implictly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -924,7 +931,7 @@
     <entry file="file://$PROJECT_DIR$/type and grammers/ch4.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
-          <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+          <caret line="350" column="23" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

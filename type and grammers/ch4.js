@@ -329,5 +329,23 @@ function foo() {
 var a = 42;
 
 a && foo(); // 42*/
+//Comperstion
+/*
+var a = "42";
+var b = true;
+console.log ( a == b );
+*/
 
+/*
+var a = null;
+var b;
+ console.log( a == b );
+ console.log( a == null );
+ console.log( null == b );
 
+ console.log( a == false );
+ console.log( b == false );
+ console.log( a == "" );
+ console.log( b == "" );
+ console.log( a == 0 );
+ console.log( b == 0 );*/
