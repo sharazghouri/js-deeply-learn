@@ -349,3 +349,30 @@ var b;
  console.log( b == "" );
  console.log( a == 0 );
  console.log( b == 0 );*/
+/*
+
+var a = [42];
+var b = 42;
+console.log( a == b );
+var a = null;
+var b = Object( a );	// same as `Object()`
+a == b;					// false
+
+var c = undefined;
+var d = Object( c );	// same as `Object()`
+c == d;					// false
+
+var e = NaN;
+var f = Object( e );	// same as `new Number( e )`
+e == f;		*/
+
+    /*
+
+    var i = 2 ;
+    Number.prototype.valueOf=function () {
+        return i++;
+    }
+    var  a = new Number( 42 );
+    if( (a == 2 ) && ( a == 3 )){
+        console.log( "yep its working ");
+    }*/
