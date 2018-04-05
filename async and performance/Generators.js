@@ -14,27 +14,37 @@ function bar(){
 foo(); */
 //GENERATOR EXAMPLE
 
-
+/* 
 var x = 1;
-function*foo(){
-  x++;
-  yield;
-  bar();
-  console.log( 'x',x );
+
+function*foo() {
+	x++;
+	yield; // pause!
+	console.log( "x:", x );
 }
 
-function bar(){
-  x++;
+function bar() {
+	x++;
 }
-
 
 // construct an iterator `it` to control the generator
 var it = foo();
 
-//Start foo here
+// start `foo()` here!
 it.next();
-console.log(x); // 3
+x;						// 2
 bar();
-console.log( 'after bar run', x );
-it.next();//4
+console.log(x);						// 3
+it.next();	
+ */
 
+
+ ///Input and OUtput
+
+ function *foo( x, y ){
+  return ( x * y );
+ }
+ var it = foo( 5 , 6 );
+ var res = it.next();
+ console.log( res.value ); //30
+ 
