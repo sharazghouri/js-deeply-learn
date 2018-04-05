@@ -49,7 +49,7 @@ it.next();
  console.log( res.value ); //30
   */
  //Iteration Messaging
- function *foo ( x ){
+ /* function *foo ( x ){
    var y = x * ( yield );
    return y ;
 
@@ -60,3 +60,16 @@ it.next();
  var res = it.next( 5 );
 
  console.log( res );//30
+
+  */
+
+  function*bar( x ){
+    var y = x * ( yield  "hello");
+   return y ;
+  }
+
+  var it  = bar( 5 );
+  var res = it.next();//  -- yield .. as an expression can send out messages in response to next(..) calls, 
+  console.log( res.value );
+  var res = it.next (3);//  -- yield .. as an expression can send out messages in response to next(..) calls, 
+  console.log( res.value );
