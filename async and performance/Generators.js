@@ -41,10 +41,22 @@ it.next();
 
  ///Input and OUtput
 
- function *foo( x, y ){
+ /* function *foo( x, y ){
   return ( x * y );
  }
  var it = foo( 5 , 6 );
  var res = it.next();
  console.log( res.value ); //30
- 
+  */
+ //Iteration Messaging
+ function *foo ( x ){
+   var y = x * ( yield );
+   return y ;
+
+ }
+
+ var it = foo( 6 );
+ it.next();
+ var res = it.next( 5 );
+
+ console.log( res );//30
