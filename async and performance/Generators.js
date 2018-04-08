@@ -193,7 +193,9 @@ for (var v of a) {
 }
 // 1 3 5 7 9
  */
-function *something() {
+
+ //Stopping Generator
+/* function *something() {
 	try {
 		var nextVal;
 
@@ -221,11 +223,37 @@ for (var v of it) {
 	if (v > 500) {
 		console.log(
 			// complete the generator's iterator
-			it.return( "Hello World" ).value
+			it.return( "Hello World" ).value  
 		);
 		// no `break` needed here
 	}
 }
-// 1 9 33 105 321 969
+ */// 1 9 33 105 321 969
 // cleaning up!
 // Hello World
+//Iterating Generator Asynchronosly.
+var api= "https://central.wordcamp.org/wp-json/wp/v2/wordcamps";
+
+/* function foo(x,y){
+
+  $.get( api , function( data, status_text ){
+
+    if( status_text !== 'success' ){
+      it.throw( status_text ); 
+    }else{
+      it.next( data );
+    }
+  });
+
+}
+
+function * main(){
+  try {
+    var text = yield foo (11 , 13 );
+    console.log( text );
+  }catch( err ){
+    console.error( err );
+  }
+}
+var it  = main();
+it.next(); */
