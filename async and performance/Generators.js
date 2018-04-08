@@ -102,7 +102,7 @@ it2.next( val1 / 4 );					// y:10 // 200 10 3
 console.log( 'val2', val2 ); //2
   */
 //Iteraor helper
-var a = 1;
+/* var a = 1;
 var b = 2;
 
 function *foo() {
@@ -130,7 +130,7 @@ function *bar() {
    }
 
  }
-
+ */
 /*  var s1 = step( foo );
  var s2 = step( bar );  
  //Run `*foo` completely
@@ -147,19 +147,85 @@ s2();
 console.log( a, b ); */
 
 // make sure to reset `a` and `b`
-a = 1;
+/* a = 1;
 b = 2;
 
 var s1 = step( foo );
-var s2 = step( bar );
+var s2 = step( bar ); */
 
-s2();		// b--;
-s2();		// yield 8
-s1();		// a++;
-s2();		// a = 8 + b;
+//s2();		// b--;
+// s2();		// yield 8
+// s1();		// a++;
+// s2();		// a = 8 + b;
 			// yield 2
-s1();		// b = b * a;
+// s1();		// b = b * a;
 			// yield b
-s1();		// a = b + 3;
-s2();		// b = a * 2;
-console.log( a, b );
+// s1();		// a = b + 3;
+// s2();		// b = a * 2;
+// console.log( a, b );
+
+
+//Producer and iterator
+/* var gimmeSomething = (function(){
+	var nextVal;
+
+	return function(){
+		if (nextVal === undefined) {
+			nextVal = 1;
+		}
+		else {
+			nextVal = (3 * nextVal) + 6;
+		}
+
+		return nextVal;
+	};
+})();
+
+gimmeSomething();		// 1
+gimmeSomething();		// 9
+gimmeSomething();		// 33
+gimmeSomething(); // 135 */
+
+/* var a = [1,3,5,7,9];
+
+for (var v of a) {
+	console.log( v );
+}
+// 1 3 5 7 9
+ */
+function *something() {
+	try {
+		var nextVal;
+
+		while (true) {
+			if (nextVal === undefined) {
+				nextVal = 1;
+			}
+			else {
+				nextVal = (3 * nextVal) + 6;
+			}
+
+			yield nextVal;
+		}
+	}
+	// cleanup clause
+	finally {
+		console.log( "cleaning up!" );
+	}
+}
+var it = something();
+for (var v of it) {
+	console.log( v );
+
+	// don't let the loop run forever!
+	if (v > 500) {
+		console.log(
+			// complete the generator's iterator
+			it.return( "Hello World" ).value
+		);
+		// no `break` needed here
+	}
+}
+// 1 9 33 105 321 969
+// cleaning up!
+// Hello World
