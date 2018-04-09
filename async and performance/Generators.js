@@ -334,7 +334,7 @@ p.then(function(text){
 );
  */
 //Asunc and wait
-function foo(x,y) {
+/* function foo(x,y) {
 	return fetch( api ).then(function( data){
 		 return data.json();
 	});
@@ -353,3 +353,30 @@ async function main() {
 main(); 
 
 
+ */
+
+ //Genertor delegation 
+
+ function * bar(){
+	 console.log( 'run start bar');
+	 yield 3;
+	 yield 4;
+	 console.log( 'run finish bar');
+ }
+ function*foo( ){
+
+	yield 1;
+	yield 2;
+	yield *bar();
+	yield 5;
+	
+ }
+
+it = foo();
+console.log(it.next().value );	// 1
+console.log(it.next().value );	// 2
+console.log(it.next().value );	// `*foo()` starting
+					// 3
+console.log(it.next().value );	// 4
+console.log(it.next().value );	// `*foo()` finished
+			
