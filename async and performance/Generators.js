@@ -274,7 +274,7 @@ try {
 catch (err) {
 	console.error( err );	// TypeError
 } */
-function *main() {
+/* function *main() {
 	var x = yield "Hello World";
 
 	// never gets here
@@ -292,4 +292,47 @@ try {
 catch (err) {
 	// nope, didn't handle it!
 	console.error( err );			// Oops
+} */
+//Generator + promises
+
+
+ function foo() {
+		return fetch( api ).then(function( data){
+		 return data.json();
+		});
 }
+
+
+
+function *main() {
+	try {
+		var text = yield foo( );
+	
+		
+		console.log( text );
+		
+		
+	}
+	catch (err) {
+		console.error( err );
+	}
+}
+var it = main();
+
+var p = it.next().value;
+
+
+// wait for the `p` promise to resolve
+p.then(function(text){
+	
+		 
+    it.next(  text );
+	},
+	function(err){
+		it.throw( err );
+	}
+);
+
+
+
+
