@@ -294,7 +294,7 @@ catch (err) {
 	console.error( err );			// Oops
 } */
 //Generator + promises
-
+/* 
 
  function foo() {
 		return fetch( api ).then(function( data){
@@ -332,7 +332,24 @@ p.then(function(text){
 		it.throw( err );
 	}
 );
+ */
+//Asunc and wait
+function foo(x,y) {
+	return fetch( api ).then(function( data){
+		 return data.json();
+	});
+}
 
+async function main() {
+	try {
+		var text = await foo( 11, 31 );
+		console.log( text);
+		}
+	catch (err) {
+		console.error( err );
+	}
+}
 
+main(); 
 
 
