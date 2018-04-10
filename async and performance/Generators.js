@@ -355,7 +355,7 @@ main();
 
  */
 
- //Genertor delegation 
+ //
 
  function * bar(){
 	 console.log( 'run start bar');
