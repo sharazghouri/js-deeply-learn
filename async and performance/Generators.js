@@ -355,8 +355,8 @@ main();
 
  */
 
- //
-
+ //Generator delegation
+/* 
  function * bar(){
 	 console.log( 'run start bar');
 	 yield 3;
@@ -379,4 +379,41 @@ console.log(it.next().value );	// `*foo()` starting
 					// 3
 console.log(it.next().value );	// 4
 console.log(it.next().value );	// `*foo()` finished
-			
+*/
+
+function *foo() {
+	console.log( "inside `*foo()2`:",  yield "B" );
+
+	console.log( "inside `*foo()3`:", yield "C" );
+
+	return "D";
+}
+
+function *bar() {
+	console.log( "inside `*bar()1`:", yield "A" );
+
+	// `yield`-delegation!
+	console.log( "inside `*bar()4`:", yield *foo() );
+
+	console.log( "inside `*bar()5`:", yield "E" );
+
+	return "F";
+}
+
+var it = bar();
+
+console.log( "outside:", it.next().value );//A
+
+console.log( "outside:", it.next(1).value );
+// inside `*bar()`: 1
+// outside: B
+console.log( "outside:", it.next( 2 ).value );
+// inside `*foo()`: 2
+// outside: C
+console.log( "outside:", it.next( 3 ).value );
+// inside `*foo()`: 3
+// inside `*bar()`: D
+// outside: E
+console.log( "outside:", it.next( 4 ).value );
+// inside `*bar()`: 4
+// outside: F
