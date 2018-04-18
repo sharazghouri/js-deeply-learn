@@ -1,3 +1,1 @@
-/**
- * Created by welcom on 3/19/2018.
- */
+var api = "https://central.wordcamp.org/wp-json/wp/v2/wordcamps";
