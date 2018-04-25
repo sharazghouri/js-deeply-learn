@@ -34,8 +34,31 @@ console.log(a ,'ouside block'); */
 // }
 //use of const
 
+// {
+//   const ASD ='asd';
+//   console.log( ASD );
+//   //ASD =3; //type error.
+// }
+//Block scoped functions
 {
-  const ASD ='asd';
-  console.log( ASD );
-  //ASD =3; //type error.
+
+  foo();// opsoite to let
+
+  function foo(){
+
+  }
 }
+//foo(); //es 6 will be refernce error
+
+if (true) {
+	function foo() {
+		console.log( "1" );
+	}
+}
+else {
+	function foo() {
+		console.log( "2" );
+	}
+}
+
+foo();
