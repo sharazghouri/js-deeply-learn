@@ -135,13 +135,36 @@ console.log(a ,'ouside block'); */
 // foo(undefined, 6);	// 17
 
 //ES6 this defualt parameter
-function foo( x =11 , y =31){
-  console.log( x + y);
-}
-foo();
-foo(2, 6);
-foo( 0 ,42);
+// function foo( x =11 , y =31){
+//   console.log( x + y);
+// }
+// foo();
+// foo(2, 6);
+// foo( 0 ,42);
 
-foo( 5 );
-foo( 5 ,undefined);// 36 <-- `undefined` is missing
-foo( null, 6 );			// 6  <-- null coerces to `0`
+// foo( 5 );
+// foo( 5 ,undefined);// 36 <-- `undefined` is missing
+// foo( null, 6 );			// 6  <-- null coerces to `0`
+//Default value expression
+// function bar( val ){
+//   console.log('bar called') ;
+//   return y + val;
+// }
+// function foo( x =y+3, z= bar( x )){
+//   console.log(x,z);
+// }
+// var y = 5;
+// foo(); // "bar called" 
+//         //8,13
+// foo(10);//bar called
+//           //10,15
+
+// y= 6;  
+// foo(undefined,10); //9 ,10
+var w = 1, z = 2;
+
+function foo( x = w + 1, y = x + 1, z = z + 1 ) {//z in not intialize so refernce Error
+	console.log( x, y, z );
+}
+
+foo();
