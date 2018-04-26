@@ -85,25 +85,63 @@ console.log(a ,'ouside block'); */
 // sar(2,3,4,5,6);
 
 
-function foo( ...args ){
+// function foo( ...args ){
 
-  args.shift();//discarding furst element
-  console.log( ...args);
+//   args.shift();//discarding furst element
+//   console.log( ...args);
+// }
+
+// //old way to use ...operator
+// function bar(){
+//   //turun arguments into reak arral
+//   var args= Array.prototype.slice.call( arguments);
+
+//   args.push( 4, 5);
+//   // filter out odd numbers
+// 	args = args.filter( function(v){
+// 		return v % 2 == 0;
+//   } );  
+
+//   // pass along all of `args` as arguments
+// 	// to `foo(..)`
+// 	foo.apply( null, args );
+// }
+// bar(0,1,2,3,4) ;
+
+
+//Default parameter
+
+// function foo( x,y){
+//   x = x || 11;
+//   y = y || 31;
+//   console.log( x + y );
+// }
+// foo(5 , 6);
+// foo(5 );
+// foo(null,6 );
+// foo();
+
+// foo( 0, 42 );	// Dangarse look like if you paas falsy value  Oops 53  but correct 42
+
+//Solution of the above value.
+// function foo(x, y) {
+//   x = (x !== undefined) ? x : 11;
+//   y = (y !== undefined) ? y : 31;
+
+//   console.log(x + y);
+// }
+
+// foo(0, 42);			// 42
+// foo(undefined, 6);	// 17
+
+//ES6 this defualt parameter
+function foo( x =11 , y =31){
+  console.log( x + y);
 }
+foo();
+foo(2, 6);
+foo( 0 ,42);
 
-//old way to use ...operator
-function bar(){
-  //turun arguments into reak arral
-  var args= Array.prototype.slice.call( arguments);
-
-  args.push( 4, 5);
-  // filter out odd numbers
-	args = args.filter( function(v){
-		return v % 2 == 0;
-  } );  
-
-  // pass along all of `args` as arguments
-	// to `foo(..)`
-	foo.apply( null, args );
-}
-bar(0,1,2,3,4) ;
+foo( 5 );
+foo( 5 ,undefined);// 36 <-- `undefined` is missing
+foo( null, 6 );			// 6  <-- null coerces to `0`
