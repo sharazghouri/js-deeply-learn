@@ -161,10 +161,31 @@ console.log(a ,'ouside block'); */
 
 // y= 6;  
 // foo(undefined,10); //9 ,10
-var w = 1, z = 2;
+//var w = 1, z = 2;
+//DEsctructing
+ function bar() {
+	return {
+		x: 4,
+		y: 5,
+		z: 6
+	};
+ }
 
-function foo( x = w + 1, y = x + 1, z = z + 1 ) {//z in not intialize so refernce Error
-	console.log( x, y, z );
+var tmp = bar(),
+	x = tmp.x, y = tmp.y, z = tmp.z;
+
+console.log( x, y, z );	
+function foo() {
+	return [1,2,3];
 }
 
-foo();
+var tmp = foo(),
+a = tmp[0], b = tmp[1], c = tmp[2];
+
+console.log( a, b, c );	
+
+//Es6 solve this problem
+var [a,b,c]= foo();
+var { x:x,y:y,z:z } =bar();
+console.log(a,b,c); 
+console.log( x,y,z);
