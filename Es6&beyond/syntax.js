@@ -163,29 +163,114 @@ console.log(a ,'ouside block'); */
 // foo(undefined,10); //9 ,10
 //var w = 1, z = 2;
 //DEsctructing
- function bar() {
-	return {
-		x: 4,
-		y: 5,
-		z: 6
-	};
- }
-
-var tmp = bar(),
-	x = tmp.x, y = tmp.y, z = tmp.z;
-
-console.log( x, y, z );	
-function foo() {
-	return [1,2,3];
+function bar() {
+  return {
+    x: 4,
+    y: 5,
+    z: 6
+  };
 }
 
-var tmp = foo(),
-a = tmp[0], b = tmp[1], c = tmp[2];
+// var tmp = bar(),
+// 	x = tmp.x, y = tmp.y, z = tmp.z;
 
-console.log( a, b, c );	
+// console.log( x, y, z );	
+function foo() {
+  return [1, 2, 3];
+}
 
-//Es6 solve this problem
-var [a,b,c]= foo();
-var { x:x,y:y,z:z } =bar();
-console.log(a,b,c); 
-console.log( x,y,z);
+// var tmp = foo(),
+// a = tmp[0], b = tmp[1], c = tmp[2];
+
+// console.log( a, b, c );	
+
+// //Es6 solve this problem
+// var [a,b,c]= foo();
+// var { x:x,y:y,z:z } =bar();
+// console.log(a,b,c); 
+// console.log( x,y,z);
+
+// var { x,y,z} =bar();
+// console.log(x,y,z);
+// var { x:bam,y:baz,z:bap} =bar();
+// console.log( bam,baz,bap);
+// console.log(x,y,z);
+
+// var aa = 10, bb = 20;
+// var o = { x: aa, y: bb };
+// var {x:AA,y:BB}=o;
+
+// console.log( AA); //10
+// /Object Property Assignment Pattern. 
+
+
+// var o = {};
+// [o.a,o.b,o.c] = foo();
+// ({x:o.x,y:o.y,z:o.z} = bar());
+// console.log(o.a,o.b,o.c);
+// console.log(o.x,o.y,o.z);
+
+// var o1 = { a: 1, b: 2, c: 3 }, o2 = {};
+// ({ a: o2.x, b: o2.y, c: o2.z } = o1);
+
+// console.log(o2.x, o2.y, o2.z);
+// //or
+// var o1 = { a: 1, b: 2, c: 3 }, o2 = [];
+// ({ a: o2[0], b: o2[1], c: o2[2] } = o1);
+
+// console.log(o2);
+
+// //or
+// var a1 = [1, 2, 3], o2 = {};
+// [o2.a, o2.b, o2.c] = a1;
+// console.log( o2.a, o2.b, o2.c );
+// //or 
+// var a1 = [ 1, 2, 3 ],
+// 	a2 = [];
+
+// [ a2[2], a2[0], a2[1] ] = a1;
+
+// console.log( a2 );
+// var x = 10, y = 20;
+
+// [ y, x ] = [ x, y ];
+
+// console.log( x, y );	
+//REpeat assignment
+
+// var {a:X,a:Y}= {a:1};
+// console.log( X);
+// console.log( Y);
+// var { a: { x: X, x: Y }, a } = { a: { x: 1 } };
+// console.log(X);
+// console.log(Y);
+// console.log(a);
+// ({ a: X, a: Y, a:[Z] } = { a: [1] });
+// console.log(X);
+// console.log(Y);
+// console.log(a);
+//Destructuring Assignment Expressions
+
+// var o = { a: 1, b: 2, c: 3 }, a, b, c, p;
+// p ={ a ,b,c } = o; //p assignet object refernce of o
+// console.log( a,b, c);
+// console.log( p == o);
+
+//Same for Array
+// var o = [  1,  2,  3 ], a, b, c, p;
+// p =[ a ,b,c ] = o; //p assignet object refernce of o
+// console.log( a,b, c);
+// console.log( p == o);
+//By carrying the object/array value through as the completion, you can chain destructuring assignment expressions together:
+
+var o = { a: 1, b: 2, c: 3 },
+  p = [4, 5, 6],
+  a, b, c, x, y, z;
+
+({ a } = { b, c } = o);
+[x,y] = [z] = p;
+console.log(a, b, c);			// 1 2 3
+console.log(x, y, z);			// 4 5 4
+
+
+
