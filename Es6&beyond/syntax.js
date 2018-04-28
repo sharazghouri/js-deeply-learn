@@ -263,14 +263,29 @@ function foo() {
 // console.log( p == o);
 //By carrying the object/array value through as the completion, you can chain destructuring assignment expressions together:
 
-var o = { a: 1, b: 2, c: 3 },
-  p = [4, 5, 6],
-  a, b, c, x, y, z;
+// var o = { a: 1, b: 2, c: 3 },
+//   p = [4, 5, 6],
+//   a, b, c, x, y, z;
 
-({ a } = { b, c } = o);
-[x,y] = [z] = p;
-console.log(a, b, c);			// 1 2 3
-console.log(x, y, z);			// 4 5 4
+// ({ a } = { b, c } = o);
+// [x,y] = [z] = p;
+// console.log(a, b, c);			// 1 2 3
+// console.log(x, y, z);			// 4 5 4
 
 
 
+//Too Many, Too Few, Just Enough
+
+// var[,b]= foo();
+// var { x,z} = bar();
+// console.log( b,x,z); // 1 4 6
+
+// var[,,c,d]= foo();
+// var { w,z} = bar();
+// console.log( c,z); // 3 6
+// console.log( d,w); // undefiend undefiend
+
+
+var a = [2, 3, 4];
+var [b, ...c] = a;
+console.log(b, c);
