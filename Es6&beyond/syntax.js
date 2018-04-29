@@ -353,3 +353,19 @@ function foo() {
 
 // f3( [] );							// undefined undefined [] []
 // f3( [1,2,3,4], 5, 6 );		
+//
+
+//Destructuring Defaults + Parameter Defaults
+function f6({ x = 10 } = {}, { y } = { y: 10 }) {
+
+  console.log(x, y);
+
+}
+f6();
+f6(undefined, undefined);
+f6({}, undefined);
+f6({}, {});
+f6(undefined, {});
+f6({ x: 2 }, { y: 3 });
+
+
