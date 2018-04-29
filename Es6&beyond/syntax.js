@@ -356,16 +356,81 @@ function foo() {
 //
 
 //Destructuring Defaults + Parameter Defaults
-function f6({ x = 10 } = {}, { y } = { y: 10 }) {
+// function f6({ x = 10 } = {}, { y } = { y: 10 }) {
 
-  console.log(x, y);
+//   console.log(x, y);
 
+// }
+// f6();
+// f6(undefined, undefined);
+// f6({}, undefined);
+// f6({}, {});
+// f6(undefined, {});
+// f6({ x: 2 }, { y: 3 });
+// Nested Defaults: Destructured and Restructured
+
+var defaults = {
+  options: {
+    remove: true,
+    enable: false,
+    instance: {}
+  },
+  log: {
+    warn: true,
+    error: true
+
+  }
+};
+
+var config = {
+  options: {
+    remove: false,
+    instance: null
+  }
+};
+
+// config.options = config.options || {};
+// config.options.remove = (config.options.remove !== undefined) ?
+//   config.options.remove : defaults.options.remove;
+// config.options.enable = (config.options.enable !== undefined) ?
+//   config.options.enable : defaults.options.enable;
+
+//Es6 approch
+var config = Object.assign({}, defaults, config);
+
+//destructring approch
+
+config.options = config.options || {};
+config.log = config.log || {};
+({
+  options: {
+    remove: config.options.remove = defaults.options.remove,
+    enable: config.options.enable = defaults.options.enable,
+    instance: config.options.instance = defaults.options.instance,
+  }
+
+} = config);
+
+
+//merge default into config
+{
+  //destructer with default value assignments
+  let {
+    options: {
+      remove = defaults.options.remove,
+      enable = defaults.options.enable,
+      instance = defaults.options.instance,
+    } = {},
+    log: {
+      warn = defaults.log.warn,
+      error = defaults.log.error,
+    } = {},
+  } = config,
+
+    //restructre
+    config = {
+      options: { remove, enable, instance },
+      log: { warn, error }
+    }
+  console.log(config);
 }
-f6();
-f6(undefined, undefined);
-f6({}, undefined);
-f6({}, {});
-f6(undefined, {});
-f6({ x: 2 }, { y: 3 });
-
-
