@@ -413,24 +413,38 @@ config.log = config.log || {};
 
 
 //merge default into config
-{
-  //destructer with default value assignments
-  let {
-    options: {
-      remove = defaults.options.remove,
-      enable = defaults.options.enable,
-      instance = defaults.options.instance,
-    } = {},
-    log: {
-      warn = defaults.log.warn,
-      error = defaults.log.error,
-    } = {},
-  } = config,
+// {
+//   //destructer with default value assignments
+//   let {
+//     options: {
+//       remove = defaults.options.remove,
+//       enable = defaults.options.enable,
+//       instance = defaults.options.instance,
+//     } = {},
+//     log: {
+//       warn = defaults.log.warn,
+//       error = defaults.log.error,
+//     } = {},
+//   } = config,
 
-    //restructre
-    config = {
-      options: { remove, enable, instance },
-      log: { warn, error }
-    }
-  console.log(config);
-}
+//     //restructre
+//     config = {
+//       options: { remove, enable, instance },
+//       log: { warn, error }
+//     }
+//   console.log(config);
+// }
+
+// consice propties
+
+//pre es next 
+// var x=2,y=3 ,o ={
+//   x:x,
+//   y:y
+// };
+
+// var x =3,y=4, o= {
+//   x,
+//   y
+// };
+// console.log(o);
