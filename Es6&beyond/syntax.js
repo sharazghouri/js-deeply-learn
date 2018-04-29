@@ -448,3 +448,16 @@ config.log = config.log || {};
 //   y
 // };
 // console.log(o);
+
+//Concise method
+//Pre es6 
+// var o = {
+//   x: function () { },
+//   y: function () { },
+// }
+// ES nesxt
+// var o = {
+//   x() { },
+//   y() { },
+// }
+// console.log( o);
