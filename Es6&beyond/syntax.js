@@ -494,23 +494,50 @@ function runSomtething(o) {
 //   }
 // });
 //setter and getter
-var o = {
-  __id: 10,
-  get  id () {
-      return this.__id++;
-  
-  },
-  //set id( { id : v = 0} ){
-  set id( v ){
-    this.__id = v;
+// var o = {
+//   __id: 10,
+//   get  id () {
+//       return this.__id++;
 
-  }
+//   },
+//   //set id( { id : v = 0} ){
+//   set id( v ){
+//     this.__id = v;
+
+//   }
+// };
+
+// console.log( o.id ); //10
+// console.log( o.id ); //11
+//  o.id =20;
+//  console.log( o.id ); //20
+//  //and
+//  console.log( o.id ); //21
+//  console.log( o.id ); //21 --still
+//Computed Property Names
+
+//ES5
+var prefix = 'user_';
+
+var o = {
+  baz: function () { }
 };
 
-console.log( o.id ); //10
-console.log( o.id ); //11
- o.id =20;
- console.log( o.id ); //20
- //and
- console.log( o.id ); //21
- console.log( o.id ); //21 --still
+o[prefix + 'foo'] = function () { };
+o[prefix + 'bar'] = function () { };
+//
+//ES6 
+var prefix = 'user_';
+
+var o = {
+  baz: function () { },
+  [prefix + "foo"]: function () { },
+  [prefix + "bar"]: function () { }
+};
+
+var o = {
+  baz: function () { },
+  [prefix + "foo"]: function () { }, // concise method
+  *[prefix + "bar"]: function() { } // concise generator
+};
+
