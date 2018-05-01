@@ -543,10 +543,48 @@ function runSomtething(o) {
 //  Setting prototype
 //Setting[[Prototype]]
 
-var o1={};
-var o2 ={
-  __proto__:o1
-},
+// var o1={};
+// var o2 ={
+//   __proto__:o1
+// },
 
 // set prototype of the existing project
 //Object.setPrototypeOf( o1,o2);
+//supre Object
+
+// var o1 = {
+//   foo(){
+//     console.log('o1:foo');
+//   }
+// }
+// var o2 = {
+//   foo(){
+//     super.foo();
+//     console.log('o2:foo');
+//   }
+// }
+// Object.setPrototypeOf( o2, o1 );
+
+// o2.foo();
+//Template literal
+//Pre ES
+/* var name = "Kyle";
+
+var greeting = "Hello " + name + "!";
+
+console.log( greeting );			// "Hello Kyle!"
+console.log( typeof greeting );	 */
+//ES Next
+var name = "Kyle";
+
+var greeting = `Hello  ${name}  !`;
+
+console.log( greeting );			// "Hello Kyle!"
+console.log( typeof greeting );	
+
+var text =
+`Now is the time for all good men
+to come to the aid of their
+country!`;
+
+console.log( text );
