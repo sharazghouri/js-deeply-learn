@@ -589,13 +589,26 @@ country!`;
 
 console.log( text ); */
 
-function upper(s) {
+// function upper(s) {
 
-  return s.toUpperCase();
+//   return s.toUpperCase();
+// }
+// var who = 'reader';
+
+
+// var text = `A very ${upper( "upper")} welecome to all of you ${upper(`${who}s`)}`;
+
+// console.log(text);
+//Express scope
+
+
+function foo(str ){
+  var name ='foo';
+  console.log(str);
 }
-var who = 'reader';
-
-
-var text = `A very ${upper( "upper")} welecome to all of you ${upper(`${who}s`)}`;
-
-console.log(text);
+function bar(){
+var name = 'bar';
+foo(`Hello form ${name}`);
+}
+var name ='name';
+bar();
