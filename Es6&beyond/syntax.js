@@ -517,27 +517,36 @@ function runSomtething(o) {
 //Computed Property Names
 
 //ES5
-var prefix = 'user_';
+// var prefix = 'user_';
 
-var o = {
-  baz: function () { }
-};
+// var o = {
+//   baz: function () { }
+// };
 
-o[prefix + 'foo'] = function () { };
-o[prefix + 'bar'] = function () { };
-//
-//ES6 
-var prefix = 'user_';
+// o[prefix + 'foo'] = function () { };
+// o[prefix + 'bar'] = function () { };
+// //
+// //ES6 
+// var prefix = 'user_';
 
-var o = {
-  baz: function () { },
-  [prefix + "foo"]: function () { },
-  [prefix + "bar"]: function () { }
-};
+// var o = {
+//   baz: function () { },
+//   [prefix + "foo"]: function () { },
+//   [prefix + "bar"]: function () { }
+// };
 
-var o = {
-  baz: function () { },
-  [prefix + "foo"]: function () { }, // concise method
-  *[prefix + "bar"]: function() { } // concise generator
-};
+// var o = {
+//   baz: function () { },
+//   [prefix + "foo"]: function () { }, // concise method
+//   *[prefix + "bar"]: function() { } // concise generator
+// };
+//  Setting prototype
+//Setting[[Prototype]]
 
+var o1={};
+var o2 ={
+  __proto__:o1
+},
+
+// set prototype of the existing project
+//Object.setPrototypeOf( o1,o2);
