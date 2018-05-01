@@ -575,7 +575,7 @@ var greeting = "Hello " + name + "!";
 console.log( greeting );			// "Hello Kyle!"
 console.log( typeof greeting );	 */
 //ES Next
-var name = "Kyle";
+/* var name = "Kyle";
 
 var greeting = `Hello  ${name}  !`;
 
@@ -587,4 +587,15 @@ var text =
 to come to the aid of their
 country!`;
 
-console.log( text );
+console.log( text ); */
+
+function upper(s) {
+
+  return s.toUpperCase();
+}
+var who = 'reader';
+
+
+var text = `A very ${upper( "upper")} welecome to all of you ${upper(`${who}s`)}`;
+
+console.log(text);
