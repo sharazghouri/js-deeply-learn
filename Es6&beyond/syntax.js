@@ -621,11 +621,32 @@ console.log( text ); */
 // var desc= 'awsomr';
 // foo `Every thing is ${desc}`;
 
-function bar(){
-  return  function foo( strings, ...values ){
-    console.log( strings);
-    console.log( values );
-  }
+// function bar(){
+//   return  function foo( strings, ...values ){
+//     console.log( strings);
+//     console.log( values );
+//   }
+// }
+// var desc ='awsomr';
+// bar() `Every thing is ${desc}!`
+
+
+// RAW STRINGS
+
+function showRaw( strings, ...values){
+  console.log(strings);
+  console.log(strings.raw);
+  console.log(values);
+  console.log(values.raw);
 }
-var desc ='awsomr';
-bar() `Every thing is ${desc}!`
+
+console.log(`hello\nword`) ;
+console.log( String.raw`hello\nword`) ;
+ console.log(String.raw`hello\nword`.length);
+ var ali="ss";
+ showRaw`sdsd ${ali} ! ${ali}`; ///
+ 11
+//637 (3) ["sdsd ", " ! ", "", raw: Array(3)]
+//638 (3) ["sdsd ", " ! ", ""]
+//639 (2) ["ss", "ss"]
+//640 undefined
