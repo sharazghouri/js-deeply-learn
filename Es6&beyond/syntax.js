@@ -599,16 +599,33 @@ console.log( text ); */
 // var text = `A very ${upper( "upper")} welecome to all of you ${upper(`${who}s`)}`;
 
 // console.log(text);
-//Express scope
+//Express scope with interplation
 
 
-function foo(str ){
-  var name ='foo';
-  console.log(str);
-}
+// function foo(str ){
+//   var name ='foo';
+//   console.log(str);
+// }
+// function bar(){
+// var name = 'bar';
+// foo(`Hello form ${name}`);
+// }
+// var name ='name';
+// bar();/
+//Tagged Template Litearl
+
+// function foo(string, ...values){
+// console.log(string);
+// console.log( values );
+// }
+// var desc= 'awsomr';
+// foo `Every thing is ${desc}`;
+
 function bar(){
-var name = 'bar';
-foo(`Hello form ${name}`);
+  return  function foo( strings, ...values ){
+    console.log( strings);
+    console.log( values );
+  }
 }
-var name ='name';
-bar();
+var desc ='awsomr';
+bar() `Every thing is ${desc}!`
