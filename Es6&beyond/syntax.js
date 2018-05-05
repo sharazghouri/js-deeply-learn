@@ -633,20 +633,27 @@ console.log( text ); */
 
 // RAW STRINGS
 
-function showRaw( strings, ...values){
-  console.log(strings);
-  console.log(strings.raw);
-  console.log(values);
-  console.log(values.raw);
-}
+// function showRaw(strings, ...values) {
+//   console.log(strings);
+//   console.log(strings.raw);
+//   console.log(values);
+//   console.log(values.raw);
+// }
 
-console.log(`hello\nword`) ;
-console.log( String.raw`hello\nword`) ;
- console.log(String.raw`hello\nword`.length);
- var ali="ss";
- showRaw`sdsd ${ali} ! ${ali}`; ///
- 11
+// console.log(`hello\nword`);
+// console.log(String.raw`hello\nword`);
+// console.log(String.raw`hello\nword`.length);
+// var ali = "ss";
+// showRaw`sdsd ${ali} ! ${ali}`; ///
+// 11
 //637 (3) ["sdsd ", " ! ", "", raw: Array(3)]
 //638 (3) ["sdsd ", " ! ", ""]
 //639 (2) ["ss", "ss"]
 //640 undefined
+//Arrow operator
+// 
+
+
+var myArra = [2, 3, 4];
+  myArra = myArra.map(x => x * 2);
+console.log(myArra);
