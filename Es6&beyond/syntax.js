@@ -654,6 +654,44 @@ console.log( text ); */
 // 
 
 
-var myArra = [2, 3, 4];
-  myArra = myArra.map(x => x * 2);
-console.log(myArra);
+// var myArra = [2, 3, 4];
+//   myArra = myArra.map(x => x * 2);
+// console.log(myArra);
+
+//Deeply this 
+
+//PRE Old
+/* var controller = {
+
+  myRequest: function () {
+    var self = this;
+    btn.addEventListener("click", function () {
+      // ..
+      self.makeRequest();
+    }, false);
+  }
+}; */
+
+// var controller = {
+
+//   myRequest : function(){
+//     var self = this;
+//     btn.addEventListener( "click", () => {
+// 			// ..
+// 			this.makeRequest();
+// 		}, false );
+//   }
+// };
+
+// 'use strict';
+
+// var obj = {
+//   i: 10,
+//   b: () => console.log(this.i, this),
+//   c: function() {
+//     console.log(this.i, this);
+//   }
+// }
+
+// obj.b(); // prints undefined, Window {...} (or the global object)
+// obj.c(); // prints 10, Object {...}
