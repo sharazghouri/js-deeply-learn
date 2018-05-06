@@ -682,16 +682,41 @@ console.log( text ); */
 // 		}, false );
 //   }
 // };
+//Foor of loops
 
-// 'use strict';
+var arr = ['a', 'b', 'c', 'd'];
 
-// var obj = {
-//   i: 10,
-//   b: () => console.log(this.i, this),
-//   c: function() {
-//     console.log(this.i, this);
-//   }
+// for( var idx in arr){
+//   console.log( idx );
+// } // 0,1,2,3,4
+
+// for( var val of arr ){
+//   console.log( val);
+// } // a,b,c,d,
+
+// var k = Object.keys( arr );
+// console.log( k );
+// for (var val, i = 0; i < k.length; i++) {
+// 	//val = arr[ i ]; same as below statment 
+// 	val = arr[ k[i] ];
+// 	console.log( val );
 // }
 
-// obj.b(); // prints undefined, Window {...} (or the global object)
-// obj.c(); // prints 10, Object {...}
+// var o = {};
+// for (o.a of [1, 2, 3, 4]) {
+//   console.log(o.a);
+// }
+// for ({ x: o.a } of [{ x: 1 }, { x: 2 }, { x: 3 }, { x: 4 }]) {
+//   console.log(o.a);
+// }
+//Sticky Flag
+// var re1 = /foo/,
+// 	str = "++foo++";
+
+// re1.lastIndex;			// 0
+// re1.test( str ) ;		// true
+// re1.lastIndex;			// 0 -- not updated
+
+// re1.lastIndex = 4;
+// re1.test( str );		// true -- ignored `lastIndex`
+// re1.lastIndex;
