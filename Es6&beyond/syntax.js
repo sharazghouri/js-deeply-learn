@@ -720,3 +720,54 @@ var arr = ['a', 'b', 'c', 'd'];
 // re1.lastIndex = 4;
 // re1.test( str );		// true -- ignored `lastIndex`
 // re1.lastIndex;
+
+// Symbol
+/* 
+var sym = Symbol('some optional desecription');
+console.log(typeof sym);
+console.log(sym.toString());
+
+//similar primitive string not instance of String 
+console.log(sym instanceof Symbol);
+var symObject = Object(sym); //boxed to objecy 
+console.log(symObject instanceof Symbol);
+console.log(symObject.valueOf() === sym) //'Symbol('some optional desecription')' === 
+
+ */
+
+// const EVT_LOGIN = Symbol( 'even.login');
+
+// eventhun.listen(EVT_LOGIN ,function(){
+//   //....
+// });
+
+// const INSTANCE = Symbol('instance');
+
+// function HappyFace() {
+//   if (HappyFace[INSTANCE]) return HappyFace[INSTANCE];
+//   function smile() { }
+//   return HappyFace[INSTANCE] = {
+//     smile: smile
+//   }
+// }
+// var me = HappyFace();
+// you = HappyFace();
+
+// console.log(me === you);
+
+// var s =Symbol.for( 'Something cool') ;
+// var desc = Symbol.keyFor( s );
+// console.log( desc );
+//get the symbol register again 
+// var s2 = Symbol.for( desc );
+// console.log (s2  == s);
+//Sybmol as object proptery
+
+var o ={
+  foo : 42,
+  [ Symbol('bar')] : 'helo world',
+  baz: true
+};
+
+console.log( Object.getOwnPropertyNames( o ));
+console.log( Object.getOwnPropertySymbols( o ));
