@@ -365,4 +365,28 @@ class Foo {
 // var b = new ChildB();
 // b.foo();
 
-///
+// Extending native
+// class MYCoolArray extends Array {
+
+// 	first() {
+// 		return this[0];
+// 	}
+// 	last() {
+// 		return this[this.length - 1];
+// 	}
+// }
+// var a = new MYCoolArray(1, 2, 4, 3);
+
+// a.first();// 1
+// a.last();// 3
+
+// class Oops extends Error {
+// 	constructor(reason) {
+// 		super(reason);
+// 		this.oops = reason;
+// 	}
+// }
+
+// // later:
+// var ouch = new Oops( "I messed up!" );
+// throw ouch;
