@@ -317,6 +317,52 @@ class Foo {
 
 }
 
+// var f = new Foo(2, 3);
+// console.log(f.gimmXY());
 
-var f = new Foo(2, 3);
-console.log(f.gimmXY());
+
+// class Bar extends Foo {
+// 	constructor(a, b, c) {
+// 		super(a, b);
+// 		this.z = c;
+// 	}
+
+// 	gimmXY() {
+// 		return super.gimmXY() * this.z;
+// 	}
+// }
+
+
+// var b = new Bar(2, 3, 4);
+// console.log(b.gimmXY());
+
+// class PattenA {
+// 	constructor() { this.id = 'a' }
+// 	foo() { console.log("Parrent a:", this.id) }
+// }
+
+// class PattenB {
+// 	constructor() { this.id = 'b' }
+// 	foo() { console.log("Parrent B:", this.id) }
+// }
+
+// class ChildA extends PattenA {
+// 	foo() {
+// 		super.foo();
+// 		console.log('Child a', this.id)
+// 	}
+
+// }
+
+// class ChildB extends PattenB {
+// 	foo() {
+// 		super.foo();
+// 		console.log('ChildB', this.id);
+// 	}
+// }
+// var a = new ChildA();
+// a.foo();
+// var b = new ChildB();
+// b.foo();
+
+///
