@@ -211,3 +211,94 @@ for (var v of Fib) {
 // }
 
 // console.log(it.next());
+
+// function* foo() {
+// 	try {
+// 		yield 1;
+// 	}
+// 	catch (err) {
+// 		console.log(err);
+// 	}
+
+// 	yield 2;
+
+// 	throw "Hello!";
+// }
+// var it = foo();
+// console.log(it.next());
+// try {
+
+// 	it.throw('hi');
+// 	it.next();
+// 	console.log('never gets here');
+
+// } catch (err) {
+// 	console.log(err);
+// }
+// function* foo() {
+// 	try {
+// 		yield 1;
+// 	}
+// 	catch (err) {
+// 		console.log(err);
+// 	}
+
+// 	yield 2;
+
+// 	throw "foo: e2";
+// }
+
+// function* bar() {
+// 	try {
+// 		yield* foo();
+
+// 		console.log("never gets here");
+// 	}
+// 	catch (err) {
+// 		console.log(err);
+// 	}
+// }
+// var it = bar();
+
+// try {
+// 	it.next();
+// 	it.throw('e1');
+
+// } catch (err) {
+
+// 	console.log('never get here');
+// }
+// console.log(it.next());
+
+function foo() {
+
+	function nextState(v) {
+		switch (state) {
+			case 0:
+				state++;
+				// the yeild expression 	
+				return 42;
+			case 1:
+				state++;
+				//yeid express fullfiled
+				x = v;
+				console.log(x);
+				//the implictly `return`
+				return undefined;
+			// no need to handel state
+		}
+
+	}
+	var state = 0, x;
+	return {
+		next: function (v) {
+			var ret = nextState(v);
+			return { value: ret, done: (state == 2) };
+		}
+	}
+}
+
+var it = foo();
+console.log(it.next());
+console.log(it.next(10));
+
