@@ -269,7 +269,7 @@ for (var v of Fib) {
 // 	console.log('never get here');
 // }
 // console.log(it.next());
-
+/* 
 function foo() {
 
 	function nextState(v) {
@@ -300,5 +300,23 @@ function foo() {
 
 var it = foo();
 console.log(it.next());
-console.log(it.next(10));
+console.log(it.next(10)); */
+//New way of module pattern
 
+//Classes
+
+class Foo {
+	constructor(a, b) {
+
+		this.x = a;
+		this.y = b;
+	}
+	gimmXY() {
+		return this.x * this.y;
+	}
+
+}
+
+
+var f = new Foo(2, 3);
+console.log(f.gimmXY());
