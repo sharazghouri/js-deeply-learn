@@ -114,11 +114,65 @@ for (var v of Fib) {
 // it.next();	
 
 
-var a = [1, 2, 3, 4, 5];
-var it = a[Symbol.iterator]();
-var [x, y] = it; // just take first two element so of js
-var [z, ...w] = it; //it; jsut take third and rest of the parameter
-// is `it` fully exhausted? Yep.
-it.next();				// { value: undefined, done: true }
+// var a = [1, 2, 3, 4, 5];
+// var it = a[Symbol.iterator]();
+// var [x, y] = it; // just take first two element so of js
+// var [z, ...w] = it; //it; jsut take third and rest of the parameter
+//is `it` fully exhausted? Yep.
+//  it.next();				// { value: undefined, done: true }
 
-console.log(x, y, z, w);
+// console.log(x, y, z, w);
+
+//Yeid delegation
+
+// function* foo() {
+
+// 	yield 1;
+// 	yield 2;
+// 	yield 3;
+// 	return  4;
+// }
+// function* bar() {
+// 	var x = yield* foo();
+// 	console.log("x :", x);
+// }
+// for (var v of bar()) {
+// 	console.log( v );
+// }
+
+//recousice yeild * 
+// function* foo ( x ) {
+
+// 	if (x < 3) {
+// 		x = yield* foo(x + 1);
+// 	}
+// 	return  x * 2;
+// }
+// foo( 1 );
+
+//  var it = foo(1 );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+
+// for( var v of foo(1) ){
+// 	console.log( v );
+// }
+
+//
+
+
+function* foo() {
+	var x = yield 1;
+	var y = yield 2;
+	var z = yield 3;
+	console.log(x, y, z);
+}
+
+var it = foo();
+console.log(it.next('foo'));
+console.log(it.next('foo'));
+console.log(it.next('bar'));
+console.log(it.next('baz'));
+console.log(it.next());
