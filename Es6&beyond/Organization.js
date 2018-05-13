@@ -163,16 +163,51 @@ for (var v of Fib) {
 //
 
 
-function* foo() {
-	var x = yield 1;
-	var y = yield 2;
-	var z = yield 3;
-	console.log(x, y, z);
-}
+// function* foo() {
+// 	var x = yield 1;
+// 	var y = yield 2;
+// 	var z = yield 3;
+// 	console.log(x, y, z);
+// }
 
-var it = foo();
-console.log(it.next('foo'));
-console.log(it.next('foo'));
-console.log(it.next('bar'));
-console.log(it.next('baz'));
-console.log(it.next());
+// var it = foo();
+// console.log(it.next('foo'));
+// console.log(it.next('foo'));
+// console.log(it.next('bar'));
+// console.log(it.next('baz'));
+// console.log(it.next());
+
+
+// function* foo() {
+// 	try {
+// 		yield 1;
+// 		yield 2;
+// 		yield 3;
+// 	} finally {
+// 		console.log('cleanup!');
+// 	}
+// }
+// for (var v of foo()) {
+// 	console.log(v);
+// }
+// var it = foo();
+// it.next();
+// it.return(42);
+// function* foo() {
+// 	yield 1;
+// 	yield 2;
+// 	yield 3;
+// }
+
+// var it = foo();
+
+// it.next();				// { value: 1, done: false }
+
+// try {
+// 	it.throw("Oops!");
+// }
+// catch (err) {
+// 	console.log(err);	// Exception: Oops!
+// }
+
+// console.log(it.next());
