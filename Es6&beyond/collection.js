@@ -24,18 +24,52 @@
 // });
 //you cant assign more than the type of the array
 
-var a = new Int8Array(3)
-a[0] = 10;
-a[1] = 20;
-a[2] = 30;
+// var a = new Int8Array(3)
+// a[0] = 10;
+// a[1] = 20;
+// a[2] = 30;
 
 
-a.map(function (v) {
- console.log(v * v);
-});
-//console.log(a);
-// if you want to use 
+// a.map(function (v) {
+//  console.log(v * v);
+// });
+// //console.log(a);
+// // if you want to use 
 
-var b = Uint16Array.from(a, v => v * v);
+// var b = Uint16Array.from(a, v => v * v);
 
-console.log(b);
+// console.log(b);
+
+// var a = [10, 1, 2,];
+// a.sort();								// [1,10,2]
+
+// var b = new Uint8Array([10, 1, 2]);
+// b.sort();	
+
+
+//Maps
+// var m = {};
+
+// var x = { id: 1 },
+//  y = { id: 2 };
+
+// m[x] = "foo";
+// m[y] = "bar";
+
+// m[x];							// "foo"
+// m[y];	 //bar
+
+// console.log(m[x], m[y], m);
+
+var keys = [], val = [];
+var x = { id: 1 }, y = { id: 2 };
+
+key.push(x);
+val.push('foo');
+
+key.push(y);
+val.push('bar');
+key [0] === x ; true
+val[0] ; // foo
+key[ 1 ] === y ; // true
+val[1]; //bar
