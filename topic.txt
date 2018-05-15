@@ -1,0 +1,10 @@
+Check in detail 
+
+* Symbol 
+* iteraor
+
+
+//look for detail 
+apply()
+bind()
+call()
