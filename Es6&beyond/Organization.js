@@ -305,17 +305,17 @@ console.log(it.next(10)); */
 
 //Classes
 
-class Foo {
-	constructor(a, b) {
+// class Foo {
+// 	constructor(a, b) {
 
-		this.x = a;
-		this.y = b;
-	}
-	gimmXY() {
-		return this.x * this.y;
-	}
+// 		this.x = a;
+// 		this.y = b;
+// 	}
+// 	gimmXY() {
+// 		return this.x * this.y;
+// 	}
 
-}
+// }
 
 // var f = new Foo(2, 3);
 // console.log(f.gimmXY());
@@ -390,3 +390,53 @@ class Foo {
 // // later:
 // var ouch = new Oops( "I messed up!" );
 // throw ouch;
+
+// class Foo {
+// 	constructor() {
+// 		console.log( "Foo: ", new.target.name );
+// 	}
+// }
+
+// class Bar extends Foo {
+// 	constructor() {
+// 		super();
+// 		console.log( "Bar: ", new.target.name );
+// 	}
+// 	baz() {
+// 		console.log( "baz: ", new.target.name );
+// 	}
+// }
+
+// var a = new Foo();
+// // Foo: Foo
+
+// var b = new Bar();
+// // Foo: Bar   <-- respects the `new` call-site
+// // Bar: Bar
+
+// b.baz();
+// // baz: undefined
+
+/* 
+class Foo {
+	static cool() { console.log( "cool" ); }
+	wow() { console.log( "wow" ); }
+}
+
+class Bar extends Foo {
+	static awesome() {
+		super.cool();
+		console.log( "awesome" );
+	}
+	neat() {
+		super.wow();
+		console.log( "neat" );
+	}
+}
+Foo.cool();
+Bar.cool();
+Bar.awesome();
+var b = new Bar();
+b.neat();					// "wow"
+b.cool();// not work
+b.awesome(); //not work // it added to the class functio object */
