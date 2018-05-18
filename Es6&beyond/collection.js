@@ -74,13 +74,13 @@
 // key[ 1 ] === y ; // true
 // val[1]; //bar
 //Maps values
-var m = new Map();
+// var m = new Map();
 
-var x = { id: 1 },
-  y = { id: 2 };
+// var x = { id: 1 },
+//   y = { id: 2 };
 
-m.set(x, "foo");
-m.set(y, "bar");
+// m.set(x, "foo");
+// m.set(y, "bar");
 
 // var vals = [...m.values()];
 // console.log(vals);
@@ -88,10 +88,79 @@ m.set(y, "bar");
 // var new_vals = Array.from(vals);
 // console.log(new_vals);
 
-console.log(m.entries());
-var vals = [...m.entries()];
+// console.log(m.entries());
+// var vals = [...m.entries()];
 
-vals[0][0] === x;
-console.log(vals[0][1]);// "foo
-console.log(vals[1][0] === y);
-console.log(vals[1][1]);
+// vals[0][0] === x;
+// console.log(vals[0][1]);// "foo
+// console.log(vals[1][0] === y);
+// console.log(vals[1][1]);
+// var keys = [...m.keys()];
+
+// keys[0] === x;
+// console.log(keys[1] === y);
+
+//check the map has key
+//Weak Maps
+//var m = new WeakMap();
+
+// var x = { id: 1 },
+//   y = { id: 2 };
+// z = {};
+// m.set(x, "foo");
+// m.set(y, "bar");
+// m.has(x);
+
+// var m = new WeakMap();
+
+// var x = { id: 1 },
+// 	y = { id: 2 },
+// 	z = { id: 3 },
+// 	w = { id: 4 };
+
+// m.set( x, y );
+
+// x = null;						// { id: 1 } is GC-eligible
+// y = null;						// { id: 2 } is GC-eligible
+// 								// only because { id: 1 } is
+
+// m.set( z, w );
+
+// w = null;
+
+// console.log(m); // false
+//Set
+
+var s = new Set();
+
+var x = { id: 1 },
+	y = { id: 2 };
+
+
+s.add(x);
+s.add(y);
+// s.add(x);
+// console.log(s.size);//2
+// console.log(s.has(x));// true
+// s.delete(x);
+// console.log(s.size);// 1
+// s.clear();
+// console.log(s.size); //0
+
+//you can't get value from Set just check has or not
+
+//Set iteraotr 
+// var key = [...s.keys()],
+// 	vals = [...s.values()],
+// 	entries = [...s.entries()];
+
+// console.log(key[0] === x);//true
+// key[1] === y; //true
+// vals[0] == x; //true
+// vals[1] == y; //true
+// console.log(entries[0][1] === x);
+// entries[0][1] === y;
+// entries[1][0] === y;
+// entries[1][1] === y;
+
+
