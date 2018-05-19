@@ -147,20 +147,22 @@ s.add(y);
 // s.clear();
 // console.log(s.size); //0
 
-//you can't get value from Set just check has or not
+//you can't get value from Set just check has or not s.has() `key`
+
+
 
 //Set iteraotr 
-// var key = [...s.keys()],
-// 	vals = [...s.values()],
-// 	entries = [...s.entries()];
+ var s = new WeakSet();
 
-// console.log(key[0] === x);//true
-// key[1] === y; //true
-// vals[0] == x; //true
-// vals[1] == y; //true
-// console.log(entries[0][1] === x);
-// entries[0][1] === y;
-// entries[1][0] === y;
-// entries[1][1] === y;
+var x = { id: 1 },
+y = { id: 2 };
 
 
+//weak set again
+
+s.add( x ).add( y );
+
+x = null;						// `x` is GC-able
+y = null;
+
+console.log( s.);
