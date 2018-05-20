@@ -203,3 +203,20 @@ class MyArary extends Array {
 //   baz: true,
 // };
 //console.log(Object.getOwnPropertySymbols(a));
+
+//setProtottypeof 
+var o1 = {
+  foo() {
+    console.log("foo");
+  }
+};
+// var o2= {};
+
+// Object.setPrototypeOf( o2, o1 );
+
+var o2 = Object.setPrototypeOf({
+  //p2 definination
+}, o1);
+o2.foo();
+
+
