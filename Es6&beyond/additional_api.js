@@ -11,16 +11,7 @@
 // console.log(c.length);
 // console.log(c);
 
-class MyArary extends Array {
-  sum() {
-    return this.reduce(function reducer(acc, curr) {
-
-      return acc + curr;
-    }, 0);
-
-  };
-}
-
+// 
 // var x = new MyArary( 3 );
 //x.length;
 //x.size;
@@ -205,18 +196,61 @@ class MyArary extends Array {
 //console.log(Object.getOwnPropertySymbols(a));
 
 //setProtottypeof 
-var o1 = {
-  foo() {
-    console.log("foo");
-  }
-};
-// var o2= {};
+// var o1 = {
+//   foo() {
+//     console.log("foo");
+//   }
+// };
+// // var o2= {};
 
-// Object.setPrototypeOf( o2, o1 );
+// // Object.setPrototypeOf( o2, o1 );
 
-var o2 = Object.setPrototypeOf({
-  //p2 definination
-}, o1);
-o2.foo();
+// var o2 = Object.setPrototypeOf({
+//   //p2 definination
+// }, o1);
+// o2.foo();
+//Object assign
+var target = {},
+  o1 = { a: 1 }, o2 = { b: 2 },
+  o3 = { c: 3 }, o4 = { d: 4 };
+//setup read onl porperty 
+Object.defineProperty(o3, "e", {
+  value: 5,
+  enumerable: false,
+  writable: false,
+  configurable: false,
+});
 
+// //set up non enmmrable propert
+// Object.defineProperty(o3, 'f', {
+//   value: 6,
+//   enumerable: false
+// });
 
+// o3[Symbol('g')] = 7;
+
+// //setup non enumrable symbol
+// Object.defineProperty(o3, Symbol('h'), {
+//   value: 8,
+//   enumerable: false
+// });
+// Object.setPrototypeOf(o3, o4);
+
+// Object.assign(target, o1, o2, o3);
+// // console.log(target.a);
+// // console.log(target.b);
+// // console.log(target.c);
+// // Object.getOwnPropertyDescriptor(target, "e");
+// Object.getOwnPropertyDescriptor(target, "e");
+// console.log( Object.getOwnPropertySymbols( target ) );
+
+// var o1 = {
+//   foo() {
+//     console.log('foo');
+//   }
+// };
+// var o2 = Object.assign(
+//   Object.create(o1), {
+
+//   });
+// o2.foo();
