@@ -165,4 +165,4 @@ s.add( x ).add( y );
 x = null;						// `x` is GC-able
 y = null;
 
-console.log( s.);
+console.log( s.size);

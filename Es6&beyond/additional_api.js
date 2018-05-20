@@ -72,10 +72,10 @@ class MyArary extends Array {
 // console.log(c );
 
 //Mapping
-var arrLike = {
-  length: 4,
-  2: "foo"
-};
+// var arrLike = {
+//   length: 4,
+//   2: "foo"
+// };
 
 //  var mapArr= Array.from(arrLike, function mapper(val, idx) {
 //   if (typeof val === 'string') {
@@ -134,15 +134,39 @@ var arrLike = {
 
 // console.log(_a, ab);
 
-var points = [
-  { x: 10, y: 20 },
-  { x: 20, y: 30 },
-  { x: 30, y: 40 },
-  { x: 40, y: 50 },
-  { x: 50, y: 60 }
-];
+// var points = [
+//   { x: 10, y: 20 },
+//   { x: 20, y: 30 },
+//   { x: 30, y: 40 },
+//   { x: 40, y: 50 },
+//   { x: 50, y: 60 }
+// ];
 
- var asd = points.find(function matcher(obj) {
-  return (obj.x ==30 && obj.y == 40);
-});
-console.log( asd ); 
+//  var asd = points.find(function matcher(obj) {
+//   return (obj.x ==30 && obj.y == 40);
+// });
+// console.log( asd ); 
+//findIndex
+
+
+// var points = [
+// 	{ x: 10, y: 20 },
+// 	{ x: 20, y: 30 },
+// 	{ x: 30, y: 40 },
+// 	{ x: 40, y: 50 },
+// 	{ x: 50, y: 60 }
+// ];
+
+// console.log (points.findIndex( function matcher(point) {
+// 	return (
+// 		point.x % 3 == 0 &&
+// 		point.y % 4 == 0
+// 	);
+// } ) );								// 2
+
+// console.log( points.findIndex( function matcher(point) {
+// 	return (
+// 		point.x % 6 == 0 &&
+// 		point.y % 7 == 0
+// 	);
+// } ) );	
