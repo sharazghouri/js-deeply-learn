@@ -195,3 +195,11 @@ class MyArary extends Array {
 // console.log( Object.is( x, x));
 // console.log(Object.is( y, z));
 
+//Object..getOwnPropertySymbols
+
+// var a = {
+//   foo: 42,
+//   [Symbol('bar')]: 'hello word',
+//   baz: true,
+// };
+//console.log(Object.getOwnPropertySymbols(a));
