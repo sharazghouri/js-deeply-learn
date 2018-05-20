@@ -114,3 +114,35 @@ var arrLike = {
 
 // var b = [null, null, null, null].fill(42, 1, 3);
 // console.log( b );
+
+
+//Find method
+// var a = [1, 2s, 3, 4, 5];
+
+// (a.indexOf( 3 ) != -1);				// true
+// (a.indexOf( 7 ) != -1);				// false
+
+// (a.indexOf( "2" ) != -1);			// false
+
+// var _a = a.find(function (val) {
+  // return val === 2;   // true
+// });
+
+// var ab = a.find(function (val) {
+//   return val === 7;   // undifiend // falsy value
+// });
+
+// console.log(_a, ab);
+
+var points = [
+  { x: 10, y: 20 },
+  { x: 20, y: 30 },
+  { x: 30, y: 40 },
+  { x: 40, y: 50 },
+  { x: 50, y: 60 }
+];
+
+ var asd = points.find(function matcher(obj) {
+  return (obj.x ==30 && obj.y == 40);
+});
+console.log( asd ); 
