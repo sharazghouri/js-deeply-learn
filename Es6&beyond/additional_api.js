@@ -106,3 +106,11 @@ var arrLike = {
 
 // MyCoolArray.from( x ) instanceof MyCoolArray;		// true
 // MyCoolArray.of( [2, 3] ) instanceof MyCoolArray;	// true
+
+//Array fill  
+
+// var a = Array(4).fill(undefined);
+// console.log(a);
+
+// var b = [null, null, null, null].fill(42, 1, 3);
+// console.log( b );
