@@ -250,7 +250,17 @@ Object.defineProperty(o3, "e", {
 //   }
 // };
 // var o2 = Object.assign(
-//   Object.create(o1), {
+//   Object.
+// create(o1), {
 
 //   });
 // o2.foo();
+
+var a = NaN, b = "NaN", c = 42;
+
+console.log( isNaN( a ) ); // truew
+console.log( isNaN( b ) ); // // Oops true
+console.log( isNaN( c ) ); // false
+console.log( Number.isNaN( a ) );
+console.log( Number.isNaN( b ) );
+console.log( Number.isNaN( c ) );
