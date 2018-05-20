@@ -61,12 +61,48 @@ class MyArary extends Array {
 
 // console.log( a );
 
-    // var a = Array( 4 );								// four empty slots!
+// var a = Array( 4 );								// four empty slots!
 
-    // var b = Array.apply( null, { length: 4 } );		//
-    // console.log( b );
+// var b = Array.apply( null, { length: 4 } );		//
+// console.log( b );
 
-    // new way 
-    // var c = Array.from( { length: 4 } );			// four `undefined` values
+// new way 
+// var c = Array.from( { length: 4 } );			// four `undefined` values
 
-    // console.log(c );
+// console.log(c );
+
+//Mapping
+var arrLike = {
+  length: 4,
+  2: "foo"
+};
+
+//  var mapArr= Array.from(arrLike, function mapper(val, idx) {
+//   if (typeof val === 'string') {
+//     return val.toUpperCase();
+//   }
+//   else {
+//     return idx;
+//   }
+// });
+
+// console.log( mapArr );
+
+
+// class MyCoolArray extends Array {
+
+// }
+// var x = new MyCoolArray(1, 2, 3);
+//console.log( x.slice(1) instanceof MyCoolArray );// true
+
+// @@spices help us to change the 
+// class MyCoolArray extends Array {
+//   static get [Symbol.species]() { return Array };
+// }
+// var x = new MyCoolArray(1, 2, 3);
+
+// console.log(x.slice(1) instanceof MyCoolArray);// false
+// console.log(x.slice(1) instanceof Array);// true
+
+// MyCoolArray.from( x ) instanceof MyCoolArray;		// true
+// MyCoolArray.of( [2, 3] ) instanceof MyCoolArray;	// true
