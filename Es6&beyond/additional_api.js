@@ -125,7 +125,7 @@ class MyArary extends Array {
 // (a.indexOf( "2" ) != -1);			// false
 
 // var _a = a.find(function (val) {
-  // return val === 2;   // true
+// return val === 2;   // true
 // });
 
 // var ab = a.find(function (val) {
@@ -170,3 +170,19 @@ class MyArary extends Array {
 // 		point.y % 7 == 0
 // 	);
 // } ) );	
+
+// eniteries key values
+// var a = [1, 2, 3];
+// console.log('keys', [...a.keys()])
+// console.log('values', [...a.values()]);
+// console.log('entires', [...a.entries()]);
+
+// console.log( 'symbol iterator', [ ...a[Symbol.iterator]()] );
+
+var a = [];
+a.length = 3;
+a[1] = 2;
+
+//  console.log('keys', [...a.keys()])
+//  console.log('values', [...a.values()]);
+//  console.log('entires', [...a.entries()]);
