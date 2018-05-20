@@ -11,12 +11,12 @@
 // console.log(c.length);
 // console.log(c);
 
-class MyArary extends Array{
-  sum(){
-    return this.reduce(function reducer( acc , curr ){
+class MyArary extends Array {
+  sum() {
+    return this.reduce(function reducer(acc, curr) {
 
-      return  acc+curr;
-    } , 0);
+      return acc + curr;
+    }, 0);
 
   };
 }
@@ -35,3 +35,38 @@ class MyArary extends Array{
 //console.log( z.sum() );   //3
 
 
+//Array#form
+// array-like object
+// var arrLike = {
+//   length: 3,
+//   0: "foo",
+//   1: "bar",
+// }
+//var arr = Array.prototype.slice.call( arrLike);
+
+//var arr2 = arr.slice();
+//new way 
+// var arr = Array.from(arrLike);
+// var arrCopy = Array.from(arr);
+
+// console.log( arr 
+// );
+
+// var arrLike = {
+// 	length: 4,
+// 	2: "foo"
+// };
+
+// var a = Array.from( arrLike );
+
+// console.log( a );
+
+    // var a = Array( 4 );								// four empty slots!
+
+    // var b = Array.apply( null, { length: 4 } );		//
+    // console.log( b );
+
+    // new way 
+    // var c = Array.from( { length: 4 } );			// four `undefined` values
+
+    // console.log(c );
