@@ -179,10 +179,19 @@ class MyArary extends Array {
 
 // console.log( 'symbol iterator', [ ...a[Symbol.iterator]()] );
 
-var a = [];
-a.length = 3;
-a[1] = 2;
+// var a = [];
+// a.length = 3;
+// a[1] = 2;
 
 //  console.log('keys', [...a.keys()])
 //  console.log('values', [...a.values()]);
 //  console.log('entires', [...a.entries()]);
+
+//Object 
+
+// var x = NaN, y = 0, z = -1;
+// console.log(x === x);
+// console.log(y === z);
+// console.log( Object.is( x, x));
+// console.log(Object.is( y, z));
+
