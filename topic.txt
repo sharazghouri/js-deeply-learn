@@ -8,3 +8,8 @@ Check in detail
 apply()
 bind()
 call()
+
+//lib
+asm.js
+loadsh.js
+_.js

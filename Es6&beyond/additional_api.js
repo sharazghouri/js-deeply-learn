@@ -256,11 +256,32 @@ Object.defineProperty(o3, "e", {
 //   });
 // o2.foo();
 
-var a = NaN, b = "NaN", c = 42;
+// var a = NaN, b = "NaN", c = 42;
 
-console.log( isNaN( a ) ); // truew
-console.log( isNaN( b ) ); // // Oops true
-console.log( isNaN( c ) ); // false
-console.log( Number.isNaN( a ) );
-console.log( Number.isNaN( b ) );
-console.log( Number.isNaN( c ) );
+// console.log( isNaN( a ) ); // truew
+// console.log( isNaN( b ) ); // // Oops true
+// console.log( isNaN( c ) ); // false
+// console.log( Number.isNaN( a ) );
+// console.log( Number.isNaN( b ) );
+// console.log( Number.isNaN( c ) );
+// var a = NaN, b = Infinity, c = 42;
+// console.log( Number.isFinite( a ) );
+// console.log( Number.isFinite( b ) );
+// console.log( Number.isFinite( c ) );
+
+// var b = "42";
+// console.log(isFinite( b )); // course the value
+// console.log( Number.isFinite( b )); // but this not corec the value 
+//
+// console.log( "foo".repeat( 3 ) );
+
+var palindrome = "step on no pets";
+
+palindrome.startsWith( "step on" );	// true
+palindrome.startsWith( "on", 5 );	// true
+
+palindrome.endsWith( "no pets" );	// true
+palindrome.endsWith( "no", 10 );	// true
+
+palindrome.includes( "on" );		// true
+palindrome.includes( "on", 6 );		// false
