@@ -69,26 +69,59 @@
 // console.log(c instanceof Cool);
 //To pramitive 
 
-var arr = [1, 2, 3, 4, 5];
+// var arr = [1, 2, 3, 4, 5];
 //console.log(arr + 10); // 1,2,3,4,510
-arr[Symbol.toPrimitive] = function (hint) {
+// arr[Symbol.toPrimitive] = function (hint) {
 
-  if (hint == 'default' || hint == 'number') {
-    return this.reduce(function (acc, curr) {
-      return acc + curr;
-    }, 0);
+//   if (hint == 'default' || hint == 'number') {
+//     return this.reduce(function (acc, curr) {
+//       return acc + curr;
+//     }, 0);
+//   }
+// }
+
+// var o = { a: 1, b: 2, c: 3 },
+//   a = 10, b = 20, c = 30;
+
+// o[Symbol.unscopables] = {
+//   a: false,
+//   b: true,
+//   c: false
+// };
+
+// with (o) {
+//   console.log(a, b, c);		// 1 20 3
+// }
+
+//Proxy
+// var obj = { a: 1 },
+//   handlers = {
+//     get(target, key, context) {
+
+//       //note : target === obj
+//       //context === obj
+//       console.log("accessing", key);
+//       return Reflect.get(target, key, context);
+//     }
+//   },
+//   pobj = new Proxy(obj, handlers);
+
+// console.log(obj.a);
+// console.log(pobj.a);
+
+
+var handlers = {
+  getOwnPropertyDescriptor(target, prop) {
+    console.log("getOwnPropertDescriptor");
+    return Object.getOwnPropertyDescriptor(
+      target, prop
+    )
+  },
+  defineProperty(target, prop, desc) {
+    console.log("define Property");
+
+    return Object.defineProperty(target, prop, desc);
   }
-}
-
-var o = { a: 1, b: 2, c: 3 },
-  a = 10, b = 20, c = 30;
-
-o[Symbol.unscopables] = {
-  a: false,
-  b: true,
-  c: false
 };
-
-with (o) {
-  console.log(a, b, c);		// 1 20 3
-}
+proxy = new Proxy({}, handlers);
+proxy.a = 2;
