@@ -23,21 +23,72 @@
 // console.log(a.toString());
 // console.log(a instanceof Foo);
 
-function Foo(greeting) {
-  this.greeting = greeting;
+// function Foo(greeting) {
+//   this.greeting = greeting;
+// }
+// Foo.prototype[Symbol.toStringTag] = 'Foo';
+
+// Object.defineProperty( Foo, Symbol.hasInstance, {
+// 	value: function(inst) {
+// 		return inst.greeting == "hello";
+// 	}
+// } );
+
+// var a = new Foo('hello');
+// var b = new Foo('world');
+// b[Symbol.toStringTag] = 'cool';
+// console.log(a.toString());
+// console.log(String(b));
+// console.log(a instanceof Foo);
+// console.log(b instanceof Foo);
+
+//Spicess
+// class Cool {
+//   static get [Symbol.species]() { return this };
+
+//   again() {
+//     return new this.constructor[Symbol.species]();
+//   }
+// }
+
+// class Fun extends Cool {
+
+// }
+// class Awsome extends Cool {
+//   // force `@@species` to be parent constructor
+//   static get [Symbol.species]() { return Cool; }
+// }
+
+// var a = new Fun(),
+//   b = new Awsome(),
+//   c = a.again(),
+//   d = b.again();
+
+// console.log(c instanceof Fun);
+// console.log(d instanceof Awsome);
+// console.log(c instanceof Cool);
+//To pramitive 
+
+var arr = [1, 2, 3, 4, 5];
+//console.log(arr + 10); // 1,2,3,4,510
+arr[Symbol.toPrimitive] = function (hint) {
+
+  if (hint == 'default' || hint == 'number') {
+    return this.reduce(function (acc, curr) {
+      return acc + curr;
+    }, 0);
+  }
 }
-Foo.prototype[Symbol.toStringTag] = 'Foo';
 
-Object.defineProperty( Foo, Symbol.hasInstance, {
-	value: function(inst) {
-		return inst.greeting == "hello";
-	}
-} );
+var o = { a: 1, b: 2, c: 3 },
+  a = 10, b = 20, c = 30;
 
-var a = new Foo('hello');
-var b = new Foo('world');
-b[Symbol.toStringTag] = 'cool';
-console.log(a.toString());
-console.log(String(b));
-console.log(a instanceof Foo);
-console.log(b instanceof Foo);
+o[Symbol.unscopables] = {
+  a: false,
+  b: true,
+  c: false
+};
+
+with (o) {
+  console.log(a, b, c);		// 1 20 3
+}
